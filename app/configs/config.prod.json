@@ -1,0 +1,19 @@
+{
+	"discord": {
+		"clientId": "377305806321877004",
+		"clientSecret": "-5GkNhzvJrjt0JwxcUtpmLQydKe4os2a",
+		"token": "Mzc3MzA1ODA2MzIxODc3MDA0.DqGdgg.GbBjdGsYxsxfQjW7sAPFJzjoONM"
+	},
+	"db": {
+		"host": "localhost",
+		"user": "sgnbot",
+		"database": "sgn-bot",
+		"password": "N1@c4NE2HZ#Z"
+	},
+	"halloween": {
+		"guildId": "162955155875037184",
+		"roleId": "499028718585511946",
+		"categoryId": "499028814677016597",
+		"announceId": "500110776116445185"
+	}
+}
