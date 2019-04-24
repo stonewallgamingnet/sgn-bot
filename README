@@ -1,0 +1,22 @@
+# Readme
+
+## Notes
+
+When you start `pm2` be sure to include the ecosystem.config.js file like this:
+
+```
+pm2 start ecosystem.config.js
+```
+
+This is how the enviroment variables are set on the server and without them the script won't load the correct 
+config file. You may need to run the command from `~/.pm2` where the file is located.
+
+## Errors
+
+You can check the pm2 logs with the following command:
+
+```
+pm2 logs
+```
+
+Log files are located in `~/.pm2/logs`.
