@@ -6,7 +6,7 @@
 		"guildId": "162955155875037184"
 	},
 	"memberops": {
-		"database": "sgn_memberops",
+		"database": "sgn-website",
 		"prefix": "sgn_"
 	},
 	"db": {
