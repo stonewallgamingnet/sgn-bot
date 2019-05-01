@@ -41,10 +41,6 @@ async function main() {
 		charset: 'UTF8MB4_GENERAL_CI'
 	});
 
-	console.log(pool, 'pool');
-
-
-
 	client.on('ready', async () => {
 		console.log('Ready!');
 
@@ -58,10 +54,6 @@ async function main() {
 
 		const args = message.content.slice(1).split(/ +/);
 		const command = args.shift().toLowerCase();
-
-		if(command == 'pool') {
-			console.log(pool);
-		}
 
 		// if(command == 'mafia') {
 		// 	var channel = message.channel;
