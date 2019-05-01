@@ -2,13 +2,18 @@
 	"discord": {
 		"clientId": "500137506248065025",
 		"clientSecret": "Z8ONjtGPaSuDwKJcPitBeMSftZ8onkmC",
-		"token": "NTAwMTM3NTA2MjQ4MDY1MDI1.DqGeKw.yWjS2IHLkgUhKBdhn-YFULUu980"
+		"token": "NTAwMTM3NTA2MjQ4MDY1MDI1.DqGeKw.yWjS2IHLkgUhKBdhn-YFULUu980",
+		"guildId": "375133424261791755"
 	},
 	"db": {
 		"host": "localhost",
 		"user": "root",
 		"database": "sgn_sgnbot",
 		"password": "password"
+	},
+	"memberops": {
+		"database": "sgn_memberops",
+		"prefix": "jos_"
 	},
 	"halloween": {
 		"guildId": "375133424261791755",

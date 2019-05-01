@@ -5,16 +5,19 @@ const client = new Discord.Client();
 // const GIFEncoder = require('gifencoder');
 // const Canvas = require('canvas');
 const mysql = require('mysql2/promise');
+const MemberOps = require('./app/memberops.js');
+
 const games = {};
 
 if(process.env.NODE_ENV && process.env.NODE_ENV == "production") {
 	var config = require('./app/configs/config.prod.json');
 } else {
-	console.log('Loading Debug Config');
+	console.log('Loading Dev Config');
 	var config = require('./app/configs/config.dev.json');
 }
 
-client.login(config.discord.token);
+var memberOps = new MemberOps(client, mysql, config);
+
 /*
 	Maybe include Async and RSVP libs? could clean up some code.
 	TODO: Change class definition following this article
@@ -34,15 +37,18 @@ async function main() {
 		password: config.db.password,
 		waitForConnections: true,
 		connectionLimit: 10,
-		queueLimit: 0
+		queueLimit: 0,
+		charset: 'UTF8MB4_GENERAL_CI'
 	});
 
 	console.log(pool, 'pool');
 
-	client.on('ready', () => {
+
+
+	client.on('ready', async () => {
 		console.log('Ready!');
 
-		triggerNightDaily(client, pool, config);
+		//triggerNightDaily(client, pool, config);
 	});
 
 	client.on('error', console.log);
@@ -475,8 +481,6 @@ async function main() {
 					await callback(message);
 				});
 			}
-
-
 		}
 	});
 }
@@ -486,8 +490,6 @@ function triggerNightDaily(client, pool, config)
 	var now = new Date();
 	var night = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0);
 	var milliseconds = night.getTime() - now.getTime();
-
-	console.log(night, 'night');
 
 	setTimeout(function() {
 		triggerNight(client, pool, config);
@@ -570,5 +572,7 @@ async function triggerNight(client, pool, config)
 	await pool.execute('UPDATE `halloween_players` SET identify_id = NULL');
 }
 
-
 main();
+memberOps.init();
+
+client.login(config.discord.token);

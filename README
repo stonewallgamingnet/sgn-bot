@@ -20,3 +20,17 @@ pm2 logs
 ```
 
 Log files are located in `~/.pm2/logs`.
+
+## Enviroment Variables
+
+To change enviroment variables on Windows you can do:
+
+```
+set NODE_ENV=production
+```
+
+To unset:
+
+```
+set NODE_ENV=
+```

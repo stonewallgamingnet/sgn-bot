@@ -2,7 +2,12 @@
 	"discord": {
 		"clientId": "377305806321877004",
 		"clientSecret": "-5GkNhzvJrjt0JwxcUtpmLQydKe4os2a",
-		"token": "Mzc3MzA1ODA2MzIxODc3MDA0.DqGdgg.GbBjdGsYxsxfQjW7sAPFJzjoONM"
+		"token": "Mzc3MzA1ODA2MzIxODc3MDA0.DqGdgg.GbBjdGsYxsxfQjW7sAPFJzjoONM",
+		"guildId": "162955155875037184"
+	},
+	"memberops": {
+		"database": "sgn_memberops",
+		"prefix": "sgn_"
 	},
 	"db": {
 		"host": "localhost",
