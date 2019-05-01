@@ -36,7 +36,7 @@ MemberOps.prototype.init = function init() {
 	});
 
 	this.client.on('guildMembersChunk', function(guildMembers, guild) {
-		guildMembers.filter(removeBots).forEach(function(guildMember) {
+		guildMembers.filter(removeBots).forEach((guildMember) => {
 			this.factory.updateOrAddNew(guildMember);
 		});
 	});
