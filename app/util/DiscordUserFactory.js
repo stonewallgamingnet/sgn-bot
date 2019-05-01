@@ -32,7 +32,7 @@ DiscordUserFactory.prototype.findOrAddNew = async function findOrAddNew(guildMem
 
 DiscordUserFactory.prototype.updateOrAddNew = async function updateOrAddNew(guildMember) {
 	var discordUser = await this.findByUserId(guildMember.user.id);
-	console.log('DiscordUserFactory.updateOrAddNew');
+
 	if(!discordUser) {
 		discordUser = this.insert(guildMember);
 	} else {
@@ -79,8 +79,6 @@ DiscordUserFactory.prototype.update = async function update(guildMember) {
 	var sql = " UPDATE " + this.table + " SET ";
 	sql += fields.join(', ');
 	sql += "WHERE id = " + discordUser.id;
-
-	console.log(sql, 'update.sql');
 
 	var [results, ] = await this.db.execute(sql, Object.values(discordUser.fields));
 }

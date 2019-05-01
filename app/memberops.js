@@ -10,24 +10,21 @@ function MemberOps(client, mysql, config) {
 }
 
 MemberOps.prototype.init = function init() {
-	console.log('member ops init');
-
 	this.client.on('ready', async () => {
-		console.log('member ops ready');
 		// trigger fetchMembers so we can listen for guildMembersChunk
 		var guild = await this.client.guilds.get(this.config.discord.guildId).fetchMembers();
 		
-		guild.members.filter(removeBots).forEach((guildMember) => {
-			console.log(guildMember);
-			this.factory.updateOrAddNew(guildMember);
-		});
+		// Only use this code when developing
+		// guild.members.filter(removeBots).forEach((guildMember) => {
+		// 	this.factory.updateOrAddNew(guildMember);
+		// });
 	});
 
-	this.client.on('guildMemberAdd', (newMember) => {
-		this.factory.updateOrAddNew(newMember);
+	this.client.on('guildMemberAdd', (guildMember) => {
+		this.factory.updateOrAddNew(guildMember);
 	});
 
-	this.client.on('guildMemberRemove', async (guildMember) => {
+	this.client.on('guildMemberRemove', (guildMember) => {
 		this.factory.markRemoved(guildMember);
 	});
 
@@ -35,7 +32,7 @@ MemberOps.prototype.init = function init() {
 		this.factory.updateOrAddNew(newMember);
 	});
 
-	this.client.on('guildMembersChunk', function(guildMembers, guild) {
+	this.client.on('guildMembersChunk', (guildMembers, guild) => {
 		guildMembers.filter(removeBots).forEach((guildMember) => {
 			this.factory.updateOrAddNew(guildMember);
 		});
