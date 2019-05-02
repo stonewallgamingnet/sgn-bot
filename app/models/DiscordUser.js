@@ -15,11 +15,13 @@ DiscordUser.prototype.setValues = function setValues(guildMember) {
 	// var user = guildMember.user ? guildMmember.user : guildMember;
 
 	if(guildMember.user) {
+		this.fields.presence = guildMember.user.presence.status;
 		this.fields.user_id = guildMember.user.id;
 		this.fields.username = guildMember.user.username;
 		this.fields.discriminator = guildMember.user.discriminator;
 	} else {
 		this.id = guildMember.id;
+		this.fields.presence = guildMember.presence;
 		this.fields.user_id = guildMember.user_id;
 		this.fields.username = guildMember.username;
 		this.fields.discriminator = guildMember.discriminator;

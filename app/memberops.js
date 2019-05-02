@@ -3,6 +3,8 @@ var removeBots = function(guildMember) {
 	return !guildMember.user.bot;
 };
 
+const LARGE_GUILD_THRESHOLD = 50;
+
 function MemberOps(client, mysql, config) {
 	this.client = client;
 	this.config = config;
@@ -15,9 +17,11 @@ MemberOps.prototype.init = function init() {
 		var guild = await this.client.guilds.get(this.config.discord.guildId).fetchMembers();
 		
 		// Only use this code when developing
-		// guild.members.filter(removeBots).forEach((guildMember) => {
-		// 	this.factory.updateOrAddNew(guildMember);
-		// });
+		if (guild.memberCount <= LARGE_GUILD_THRESHOLD) {
+			guild.members.filter(removeBots).forEach((guildMember) => {
+				this.factory.updateOrAddNew(guildMember);
+			});
+		}
 	});
 
 	this.client.on('guildMemberAdd', (guildMember) => {
@@ -36,6 +40,10 @@ MemberOps.prototype.init = function init() {
 		guildMembers.filter(removeBots).forEach((guildMember) => {
 			this.factory.updateOrAddNew(guildMember);
 		});
+	});
+
+	this.client.on('presenceUpdate', (oldMember, newMember) => {
+		this.factory.updateOrAddNew(newMember);
 	});
 
 };
