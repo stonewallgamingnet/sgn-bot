@@ -12,6 +12,7 @@ DiscordUser.prototype.setValues = function setValues(guildMember) {
 	this.fields.nickname = guildMember.nickname;
 	this.fields.joined_on = guildMember.joinedAt;
 	this.fields.checked_on = new Date();
+	this.fields.removed = 0;
 	// var user = guildMember.user ? guildMmember.user : guildMember;
 
 	if(guildMember.user) {

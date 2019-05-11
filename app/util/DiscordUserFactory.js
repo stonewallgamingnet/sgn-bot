@@ -87,10 +87,10 @@ DiscordUserFactory.prototype.markRemoved = async function markRemoved(guildMembe
 	var discordUser = await this.findByUserId(guildMember.user.id);
 
 	var sql = "UPDATE " + this.table + " SET ";
-	sql += "removed = ?, removed_on = ? ";
+	sql += "removed = ?, removed_on = ?, checked_in = ?, presence = ? ";
 	sql += "WHERE id = ?";
 
-	this.db.execute(sql, [1, new Date(), discordUser.id]);
+	this.db.execute(sql, [1, new Date(), new Date(), discordUser.id, 'offline']);
 }
 
 

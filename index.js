@@ -9,13 +9,7 @@ const MemberOps = require('./app/memberops.js');
 
 const games = {};
 
-if(process.env.NODE_ENV && process.env.NODE_ENV == "production") {
-	var config = require('./app/configs/config.prod.json');
-} else {
-	console.log('Loading Dev Config');
-	var config = require('./app/configs/config.dev.json');
-}
-
+var config = require('./app/configs/config');
 var memberOps = new MemberOps(client, mysql, config);
 
 /*
