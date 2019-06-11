@@ -6,7 +6,7 @@ if(process.env.NODE_ENV && process.env.NODE_ENV == "production") {
 } else {
 	console.log('Loading Dev Config');
 	var config = devConfig;
-	config.discord = prodConfig.discord;
+	// config.discord = prodConfig.discord;
 }
 
 module.exports = config;
