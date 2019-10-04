@@ -43,7 +43,9 @@ MemberOps.prototype.init = function init() {
 	});
 
 	this.client.on('presenceUpdate', (oldMember, newMember) => {
-		this.factory.updateOrAddNew(newMember);
+		if(this.factory.findByUserId(newMember.user.id)) {
+			this.factory.update(newMember);
+		}
 	});
 
 };
