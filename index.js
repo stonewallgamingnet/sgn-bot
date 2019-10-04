@@ -393,20 +393,16 @@ async function main() {
 		}
 
 		if(command === 'demote-officer') {
-			if(message.member.roles.has(config['officer-role'])) {
+			if(message.member .roles.has(config['officer-role'])) {
 				var mentioned = message.mentions.members.first();
 				mentioned.removeRole(config['officer-role']);
 			}
 		}
 
 		if(command === 'promote-officer') {
-			console.log('promote officer triggered');
 			if(message.member.roles.has(config['officer-role'])) {
-				console.log('has officer role');
 				var mentioned = message.mentions.members.first();
 				mentioned.addRole(config['officer-role']);
-			} else {
-				console.log('doesnt have officer role');
 			}
 		}
 
