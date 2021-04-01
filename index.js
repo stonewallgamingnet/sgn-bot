@@ -44,6 +44,11 @@ async function main() {
 	client.on('error', console.log);
 
 	client.on('message', async (message) => {
+
+		if(!message.content.includes(' ') && (message.content.includes('.gif') || message.content.includes('-gif-'))) {
+			message.delete();
+		}
+		
 		if(!message.content.startsWith('/') || message.author.bot) return;
 
 		const args = message.content.slice(1).split(/ +/);
