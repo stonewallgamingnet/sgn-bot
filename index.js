@@ -45,9 +45,9 @@ async function main() {
 
 	client.on('message', async (message) => {
 
-		if(!message.content.includes(' ') && (message.content.includes('.gif') || message.content.includes('-gif-'))) {
-			message.delete();
-		}
+		// if(!message.content.includes(' ') && (message.content.includes('.gif') || message.content.includes('-gif-'))) {
+		// 	message.delete();
+		// }
 		
 		if(!message.content.startsWith('/') || message.author.bot) return;
 
