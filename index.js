@@ -493,27 +493,8 @@ async function main() {
 		// }
 		// 
 		
+
 	});
-
-	client.on('voiceStateUpdate', (oldState, newState) => {
-		if(!oldState.channelId) { return }
-		
-		let channelId = oldState.channelId;
-		let voiceChannel = client.guilds.get(config.discord.guildId).channels.get(channelId);
-
-		if(!voiceChannel.members.size) {
-			let parts = voiceChannel.parent.name.split('-');
-
-			if(parts) {
-				parts[0].trim()
-				parts[1] = 'Empty'
-
-				voiceChannel.parent.edit({ name: parts.join(' - ')})
-			}
-		}
-	})
-
-	
 }
 
 function triggerNightDaily(client, pool, config)
