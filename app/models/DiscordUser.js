@@ -1,40 +1,124 @@
-function DiscordUser(guildMember) {
-	this.fields = {};
+const { pool } = require('../mysql');
 
-	this.setValues(guildMember)
-}
+class DiscordUser {
 
-DiscordUser.prototype.update = function update(guildMember) {
-	this.setValues(guildMember);
-}
+    static tableName = "#__memberops_discordusers".replace('#__', process.env.MEMBEROPS_DB_PREFIX);
+    static db = pool;
 
-DiscordUser.prototype.setValues = function setValues(guildMember) {
-	this.fields.nickname = guildMember.nickname;
-	this.fields.joined_on = guildMember.joinedAt;
-	this.fields.checked_on = new Date();
-	this.fields.removed = 0;
-	// var user = guildMember.user ? guildMmember.user : guildMember;
+    constructor(data = {}) {
+        this.data = data;
+    }
 
-	if(guildMember.user) {
-		this.fields.presence = guildMember.user.presence.status;
-		this.fields.user_id = guildMember.user.id;
-		this.fields.username = guildMember.user.username;
-		this.fields.discriminator = guildMember.user.discriminator;
-	} else {
-		this.id = guildMember.id;
-		this.fields.presence = guildMember.presence;
-		this.fields.user_id = guildMember.user_id;
-		this.fields.username = guildMember.username;
-		this.fields.discriminator = guildMember.discriminator;
-	}
-}
+    static fromGuildMember(guildMember) {
+        const discordUser = new DiscordUser();
 
-DiscordUser.prototype.setId = function setId($id) {
-	if(!this.id)  {
-		this.id = $id;
-	}
+        // discordUser.data = {
+        //     nickname: guildMember.nickname,
+        //     checked_on: new Date(),
+        //     username: guildMember.user.username,
+        //     discriminator: guildMember.user.discriminator,
+        //     user_id: guildMember.user.id,
+        //     joined_on: guildMember.joinedAt,
+        //     presence: guildMember.presence?.status ? guildMember.presence.status : 'offline',
+        //     removed: 0,
+        //     removed_on: null
+        // }
 
-	return this;
+        discordUser.setData(guildMember);
+
+        return discordUser;
+    }
+
+    setData(guildMember) {
+        this.data = {
+            ...this.data,
+            nickname: guildMember.nickname,
+            checked_on: new Date(),
+            username: guildMember.user.username,
+            discriminator: guildMember.user.discriminator,
+            user_id: guildMember.user.id,
+            joined_on: guildMember.joinedAt,
+            presence: guildMember.presence?.status ? guildMember.presence.status : 'offline',
+            removed: 0,
+            removed_on: null
+        }
+    }
+
+    static async findOrAddNew(guildMember) {
+        let discordUser = await this.findByUserId(guildMember.user.id);
+
+        if(!discordUser) {
+            discordUser = DiscordUser.fromGuildMember(guildMember);
+            discordUser.insert();
+        }
+    
+        return discordUser;
+    }
+
+    static async updateOrAddNew(guildMember) {
+        let discordUser = await this.findByUserId(guildMember.user.id);
+    
+        if(!discordUser) {
+            discordUser = DiscordUser.fromGuildMember(guildMember);
+        } else {
+            discordUser.setData(guildMember);
+        }
+
+        discordUser.save();
+    
+        return discordUser;
+    }
+    
+    static async findByUserId(userId) {
+        const sql = "SELECT * FROM " + DiscordUser.tableName + " WHERE user_id = ?";
+    
+        const [user,] = await DiscordUser.db.execute(sql, [userId]);
+
+        return user.length ? new DiscordUser({...user[0]}) : null;
+    }
+
+    async save() {
+        return this.data.id ? this.update() : this.insert();
+    }
+
+    async insert() {
+        var sql = "INSERT INTO " + DiscordUser.tableName + " ";
+        sql += "(" + Object.keys(this.data).join(', ') + ")";
+        sql += " VALUES (" + new Array(Object.keys(this.data).length).fill('?').join(', ') + ")";
+    
+        const values = Object.values(this.data);
+        const [result,] = await DiscordUser.db.execute(sql, values);
+        this.id = result.insertId;
+    
+        return result;
+    }
+    
+    async update() {
+        const fields = Object.keys(this.data).filter(k => k != 'id').map((key) => {
+            return key + " = ?";
+        });
+
+        const sql = `UPDATE  ${DiscordUser.tableName} 
+                     SET ${fields.join(', ')}
+                     WHERE id = ${this.data.id}`;
+    
+        const values = Object.entries(this.data).filter(p => p[0] != 'id').map(([key, value]) => {
+            return value;
+        });
+
+        var [results, ] = await DiscordUser.db.execute(sql, values);
+
+        return results;
+    }
+
+    async markRemoved() {
+        const sql = `UPDATE ${DiscordUser.tableName} 
+                   SET removed = ?, removed_on = ?, checked_on = ?, presence = ? 
+                   WHERE id = ?`;
+    
+        return DiscordUser.db.execute(sql, [1, new Date(), new Date(), 'offline', this.data.id]);
+    }
+
 }
 
 module.exports = DiscordUser;

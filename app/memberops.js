@@ -1,4 +1,4 @@
-var DiscordUserFactory = require('./util/DiscordUserFactory');
+var DiscordUserFactory = require('./repositories/DiscordUsers');
 var config = require('./configs/config');
 var removeBots = function(guildMember) {
 	return !guildMember.user.bot;
