@@ -13,7 +13,9 @@ import {
     VoiceState,
     Presence,
     VoiceChannel,
-    CategoryChannel
+    CategoryChannel,
+    ChatInputCommandInteraction,
+    MessageContextMenuCommandInteraction
   } from "discord.js";
   import { vi } from 'vitest';
   
@@ -25,6 +27,8 @@ export default class MockDiscord {
   private guildMember!: GuildMember;
   private message!: Message;
   private interaction!: CommandInteraction;
+  private chatInputInteraction!: ChatInputCommandInteraction;
+  private messageContextMenuInteraction!: MessageContextMenuCommandInteraction;
   private role!: Role;
   private everyoneRole!: Role;
   private voiceState!: VoiceState;
@@ -43,11 +47,13 @@ export default class MockDiscord {
 
     this.mockCategory(options?.category?.name);
     this.mockVoiceChannel();
+    this.mockTextChannel();
 
     this.mockUser();
     this.mockGuildMember();
     this.mockMessage(options?.message?.content);
     this.mockInteracion(options?.command);
+    // this.mockChatInputInteraction(options?.command);
     this.mockRole();
     this.mockEveryoneRole();
 
@@ -56,24 +62,16 @@ export default class MockDiscord {
 
     this.mockPrototypes()
 
-    // if (options?.partyChannel?.messages) {
-    //   this.mockPartyMessages(options.partyChannel.messages)
-    // }
 
-    // if (options?.reaction) {
-      // const lastPartyMessage = this.botPartyTextChannel.messages.cache.last()
-      // this.mockReaction(options.reaction, lastPartyMessage)
-      // this.mockReactionUser(options.reaction?.user?.id);
-    // }
-
-    // this.guild.channels.cache.set(this.botPartyTextChannel.id, this.botPartyTextChannel)
     this.guild.roles.cache.set(this.everyoneRole.id, this.everyoneRole);
     this.guild.roles.cache.set(this.role.id, this.role);
 
-    // this.client.channels.cache.set(this.botPartyTextChannel.id, this.botPartyTextChannel)
     this.client.guilds.cache.set(this.guild.id, this.guild)
     this.guild.channels.cache.set(this.voiceChannel.id, this.voiceChannel);
     this.client.channels.cache.set(this.voiceChannel.id, this.voiceChannel);
+    this.guild.channels.cache.set(this.textChannel.id, this.textChannel);
+    this.client.channels.cache.set(this.textChannel.id, this.textChannel);
+
     this.guild.members.cache.set(this.guildMember.id, this.guildMember);
     this.guild.voiceStates.cache.set(this.voiceState.id, this.voiceState);
   }
@@ -102,9 +100,9 @@ export default class MockDiscord {
   //   return this.guildChannel;
   // }
 
-  // public getTextChannel(): TextChannel {
-  //   return this.textChannel;
-  // }
+  public getTextChannel(): TextChannel {
+    return this.textChannel;
+  }
 
   public getUser(): User {
     return this.user;
@@ -120,6 +118,22 @@ export default class MockDiscord {
 
   public getInteraction(): CommandInteraction {
     return this.interaction;
+  }
+
+  public getChatInputInteraction(command): ChatInputCommandInteraction {
+    if(!this.chatInputInteraction) {
+      this.mockChatInputInteraction(command);
+    }
+
+    return this.chatInputInteraction;
+  }
+
+  public getMessageContextMenuInteraction(command): MessageContextMenuCommandInteraction {
+    if(!this.messageContextMenuInteraction) {
+      this.mockMessageContextMenuInteraction(command);
+    }
+
+    return this.messageContextMenuInteraction;
   }
 
   public getReaction(): MessageReaction {
@@ -231,6 +245,21 @@ export default class MockDiscord {
     ]);
   }
 
+  private mockTextChannel(): void {
+    this.textChannel = Reflect.construct(TextChannel, [
+      this.guild,
+      {
+        id: "text-channel-id",
+        name: "test-text-channel",
+        parent_id: this.category.id,
+        //message: {}
+      },
+      this.client
+    ])
+
+    this.textChannel.send = vi.fn();
+  }
+
   private mockRole(): void {
     this.role = Reflect.construct(Role, [
       this.client,
@@ -303,36 +332,6 @@ export default class MockDiscord {
     this.guildMember.roles.remove = vi.fn();
   }
 
-  // private mockPartyMessages(messages): void {
-  //   messages.forEach((message) => {
-  //   const msg = Reflect.construct(Message, [
-  //       this.client,
-  //       {
-  //       id: BigInt(10),
-  //       type: "DEFAULT",
-  //       content: '',
-  //       author: this.user,
-  //       webhook_id: null,
-  //       member: this.guildMember,
-  //       pinned: false,
-  //       tts: false,
-  //       nonce: "nonce",
-  //       embeds: [message.embed],
-  //       attachments: [],
-  //       edited_timestamp: null,
-  //       reactions: [],
-  //       mentions: [],
-  //       mention_roles: [],
-  //       mention_everyone: [],
-  //       hit: false,
-  //       },
-  //       this.botPartyTextChannel
-  //     ]);
-  //     msg.channelId = this.botPartyTextChannel.id
-  //     this.botPartyTextChannel.messages.cache.set(msg.id, msg)
-  //   })
-  // }
-
   private mockMessage(content): void {
     this.message = Reflect.construct(Message, [
       this.client,
@@ -350,14 +349,14 @@ export default class MockDiscord {
         attachments: [],
         edited_timestamp: null,
         reactions: [],
-        mentions: [],
-        mention_roles: [],
-        mention_everyone: [],
+        //mentions: [],
+        //mention_roles: [],
+        //mention_everyone: [],
         hit: false,
       },
       this.textChannel
     ]);
-    this.message.react = vi.fn()
+    this.message.react = vi.fn();
   }
 
   private mockInteracion(command): void {
@@ -375,6 +374,36 @@ export default class MockDiscord {
     this.interaction.guildId = this.guild.id
     this.interaction.isCommand = vi.fn(() => true)
     this.interaction.member = this.getGuildMember();
+  }
+
+  private mockChatInputInteraction(command): void {
+    if(!command) return;
+
+    this.chatInputInteraction = Reflect.construct(ChatInputCommandInteraction, [
+      this.client,
+      {
+        data: command,
+        id: BigInt(1),
+        user: this.guildMember,
+        options: command.options
+      }
+    ]);
+
+    this.chatInputInteraction.reply = vi.fn();
+  }
+
+  private mockMessageContextMenuInteraction(command): void {
+    this.messageContextMenuInteraction = Reflect.construct(MessageContextMenuCommandInteraction, [
+      this.client,
+      {
+        data: command,
+        id: BigInt(1),
+        user: this.guildMember,
+        options: command.options
+      }
+    ]);
+
+    this.showModal = vi.fn();
   }
 
   private mockVoiceState( ): void {
