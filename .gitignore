@@ -1,3 +1,4 @@
 /node_modules/*
 sgnBot-*.json
 oldcode/configs/*
+.env
