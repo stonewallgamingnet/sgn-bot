@@ -21,10 +21,10 @@ module.exports = {
         // Special cases - search string will be changed to match the JSON data
         if (searchString.toLowerCase().includes("ds9")) {
             searchString = "Deep Space Nine";
-        }
-
-        if (searchString.toLowerCase().includes("earth")) {
+        } else if (searchString.toLowerCase().includes("earth")) {
             searchString = "Sol";
+        } else if (searchString.toLowerCase().includes("qonos")) {
+            searchString = "Qo'noS";
         }
 
         // Iterate through the JSON data for matches
@@ -45,12 +45,10 @@ module.exports = {
         }
 
         // Output the results
-        let results = `${searchString} matches the following destinations transwarps: \n`;
+        let results = `*${searchString}* matches the following destinations: \n\n`;
 
-        let result_counter = 1
         matches.forEach((result) => {
-            results += `${result_counter}. ${result.destination} can be reached through ${result.missionname} in the ${result.episodename} episode.\n`;
-            result_counter++;
+            results += `> * ${result.destination} can be reached through **${result.missionname}** in the **${result.episodename}** episode.\n`;
         })
 
         interaction.reply({ content: results, ephemeral: true})

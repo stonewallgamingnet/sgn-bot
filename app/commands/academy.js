@@ -42,7 +42,7 @@ module.exports = {
         } else if (matches.length > 1) {
             interaction.reply({ content: `More than one match was found. There may be a problem with the volume and chapter combination you entered. Please try again.`, ephemeral: true})
         } else {
-            let response = `Volume ${matches[0].volume}, Chapter ${matches[0].chapter}:\nQuestion: ${matches[0].question}\nAnswer: ${matches[0].answer}`;
+            let response = `Volume ${matches[0].volume}, Chapter ${matches[0].chapter}:\n> **Question**: ${matches[0].question}\n> **Answer**: ${matches[0].answer}`;
             interaction.reply({ content: response, ephemeral: true})
         }
 
