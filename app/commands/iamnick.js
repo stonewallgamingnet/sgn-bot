@@ -10,6 +10,8 @@ module.exports = {
 			interaction.reply('Yes, you\'re Nick!');
 		} else if (interaction.user.id == 161193235790692353) {
 			interaction.reply('You are Halish, not Nick!');
+		} else if (interaction.user.id == 230824176741515265 ) {
+			interaction.reply('You are not Nick, you are the great and mighty Josh!')
 		} else {
 			interaction.reply('Intruder Alert! Imposter Identified!!');
 		}
