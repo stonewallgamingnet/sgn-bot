@@ -31,13 +31,14 @@ class TeamChannel {
         }
         
         await this.rename('EMPTY');
-
+        
         const permissions = this.channel.permissionOverwrites.cache;
         const promises = [];
-      
+        
         permissions.each(async (permission) => {
             if(permission.type === OverwriteType.Member) {
-                promises.push(permission.delete('Resetting channel after empty'));
+                console.log('delete channel overwrite');
+                promises.push(permission.delete('this is the reason'));
             }
         });
 
@@ -79,13 +80,4 @@ class TeamChannel {
     }
 }
 
-function isTeamChannel(id) {
-    const channelIds = process.env.TEAM_UP_CHANNEL_IDS.split(',');
-
-    return channelIds.includes(id);
-}
-
-module.exports = {
-    TeamChannel,
-    isTeamChannel
-};
+module.exports = TeamChannel;
