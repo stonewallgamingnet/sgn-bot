@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const TeamChannel = require('../TeamChannel');
+const { TeamChannel, isTeamChannel} = require('../TeamChannel');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -15,7 +15,7 @@ module.exports = {
             return;
         }
 
-        if(!channelIds.includes(channel.id)) {
+        if(!isTeamChannel(channel.id)) {
             interaction.reply({content: 'This command can only be used on team channels', ephemeral: true});
         }
 
