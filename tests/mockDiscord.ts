@@ -15,7 +15,8 @@ import {
     VoiceChannel,
     CategoryChannel,
     ChatInputCommandInteraction,
-    MessageContextMenuCommandInteraction
+    MessageContextMenuCommandInteraction,
+    Collection
   } from "discord.js";
   import { vi } from 'vitest';
   
@@ -52,7 +53,7 @@ export default class MockDiscord {
     this.mockUser();
     this.mockGuildMember();
     this.mockMessage(options?.message?.content);
-    this.mockInteracion(options?.command);
+    this.mockInteraction(options?.command);
     // this.mockChatInputInteraction(options?.command);
     this.mockRole();
     this.mockEveryoneRole();
@@ -74,10 +75,15 @@ export default class MockDiscord {
 
     this.guild.members.cache.set(this.guildMember.id, this.guildMember);
     this.guild.voiceStates.cache.set(this.voiceState.id, this.voiceState);
+    this.textChannel.messages.cache.set(this.message.id, this.message);
   }
 
   public getClient(): Client {
     return this.client;
+  }
+
+  public getEveryoneRole() : Role {
+    return this.everyoneRole;
   }
 
   public getGuild(): Guild {
@@ -349,9 +355,9 @@ export default class MockDiscord {
         attachments: [],
         edited_timestamp: null,
         reactions: [],
-        //mentions: [],
-        //mention_roles: [],
-        //mention_everyone: [],
+        // mentions: null,
+        mention_roles: [],
+        mention_everyone: [],
         hit: false,
       },
       this.textChannel
@@ -359,7 +365,7 @@ export default class MockDiscord {
     this.message.react = vi.fn();
   }
 
-  private mockInteracion(command): void {
+  private mockInteraction(command): void {
     if (!command) return
     this.interaction = Reflect.construct(CommandInteraction, [
       this.client,
