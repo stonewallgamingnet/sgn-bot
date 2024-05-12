@@ -5,6 +5,10 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('lock')
 		.setDescription('Lock your current team channel.')
+        .addStringOption(option => 
+            option.setName('name')
+                .setDescription('New name for your current team channel.')
+        )
         .setDefaultMemberPermissions(0),
 	async execute(interaction) {
         const channel = interaction.member.voice.channel;
@@ -26,7 +30,20 @@ module.exports = {
             return;
         }
 
-        teamChannel.lock();
+
+        if(isCooldown(channel)) {
+            const [minutes, seconds] = getCooldown(channel);
+            const minutesString = minutes > 1 ? 'minutes' : 'minute';
+            const secondsString = seconds > 1 ? 'seconds' : 'second';
+            interaction.reply({content: `This channel is currently on cooldown for ${minutes} ${minutesString} and ${seconds} ${secondsString}.`, ephemeral: true});
+            return;
+        }
+
+        const name = interaction.options.getString('name');
+        
+        teamChannel.lock(name);
+
+        updateCooldown(channel);
 
         interaction.reply({content: 'Your voice channel is now locked.', ephemeral: true});
 	},

@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { TeamChannel, isTeamChannel} = require('../TeamChannel');
+const { TeamChannel, isTeamChannel, isCooldown, updateCooldown, getCooldown} = require('../TeamChannel');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -26,8 +26,17 @@ module.exports = {
         const teamChannel = new TeamChannel(channel);
 
         const name = interaction.options.getString('name');
-        
+
+        if(isCooldown(channel)) {
+            const [minutes, seconds] = getCooldown(channel);
+            const minutesString = minutes > 1 ? 'minutes' : 'minute';
+            const secondsString = seconds > 1 ? 'seconds' : 'second';
+            interaction.reply({content: `<#${channel.id}> is currently on cooldown for ${minutes} ${minutesString} and ${seconds} ${secondsString}.`, ephemeral: true});
+            return;
+        }
+
         teamChannel.rename(name);
+        updateCooldown(channel);
 
         interaction.reply({content: `Channel name is now ${name}.`, ephemeral: true});
 	}

@@ -1,4 +1,4 @@
-const { PermissionsBitField, OverwriteType } = require('discord.js');
+const { PermissionsBitField, OverwriteType, Collection } = require('discord.js');
 
 class TeamChannel {
 
@@ -11,14 +11,14 @@ class TeamChannel {
         return !permissions.has(PermissionsBitField.Flags.Connect);
     }
 
-    async lock() {
+    async lock(name = null) {
         await this.channel.permissionOverwrites.create(this.channel.guild.roles.everyone, { Connect: false});
-        await this.updateName();
+        name ? await this.rename(name) : await this.updateName();
     }
 
-    async unlock() {
+    async unlock(name = null) {
         await this.channel.permissionOverwrites.edit(this.channel.guild.roles.everyone, { Connect: null});
-        await this.updateName();
+        name ? await this.rename(name) : await this.updateName();
     }
 
     invite(member) {
@@ -85,7 +85,75 @@ function isTeamChannel(id) {
     return channelIds.includes(id);
 }
 
+// const timestamp = Date.now();
+
+// if timestamp is > 10 minutes ago, set count = 1
+
+function setUpCooldown(channel) {
+    const client = channel.client;
+    
+    if(!client.teamCooldowns) {
+        client.teamCooldowns = new Collection();
+    }
+    
+    const teamCooldowns = client.teamCooldowns;
+    
+    if(!teamCooldowns.has(channel.id)) {
+        const now = Date.now();
+        const tenMinutesAgo = now - (10 * 60 * 1000);
+        teamCooldowns.set(channel.id, [0, tenMinutesAgo]);
+    }
+}
+
+function getCooldown(channel) {
+    let [, timeAgo] = channel.client.teamCooldowns.get(channel.id);
+       
+    const inTenMinutes = new Date(timeAgo+ (10 * 60 * 1000));
+    const now = new Date();
+
+    const timeDifference = (inTenMinutes - now)/1000;
+    const minutes = Math.floor(timeDifference / 60);
+    const seconds = Math.round(timeDifference % 60);
+
+    return [minutes, seconds];
+}
+
+function updateCooldown(channel) {
+    const now = Date.now();
+    const tenMinutes = 10 * 60 * 1000;
+    const teamCooldowns = channel.client.teamCooldowns;
+    let [count, timeAgo] = teamCooldowns.get(channel.id);
+    const timeDifference = now - timeAgo;
+
+    setUpCooldown(channel);
+
+    count = (timeDifference > tenMinutes) ? 1 : ++count;
+    
+    teamCooldowns.set(channel.id, [count, now]);
+}
+
+function isCooldown(channel) {
+    const now = Date.now();
+    const tenMinutesAgo = now - (10 * 60 * 1000);
+    const maxThreshold = 2;
+
+    setUpCooldown(channel);
+
+    const teamCooldowns = channel.client.teamCooldowns;
+
+    let [count, timeAgo] = teamCooldowns.get(channel.id);
+    console.log(count, 'count');
+    if(count >= maxThreshold && timeAgo > tenMinutesAgo) {
+        return true;
+    }
+
+    return false;
+}
+
 module.exports = {
     TeamChannel,
-    isTeamChannel
+    isTeamChannel,
+    isCooldown,
+    updateCooldown,
+    getCooldown
 };

@@ -1,11 +1,8 @@
 import { it, describe, expect, beforeAll, afterAll, afterEach, beforeEach, vi } from "vitest";
-import { TeamChannel, isTeamChannel } from './TeamChannel';
+import { TeamChannel, isTeamChannel, isCooldown, updateCooldown, getCooldown } from './TeamChannel';
 import MockDiscord from "../tests/mockDiscord";
 import { Collection, OverwriteType, PermissionOverwrites, PermissionsBitField } from "discord.js";
 import { user1 } from '../test-users.js';
-
-let testCategory;
-let testChannel;
 
 beforeAll(() => {
     const discord = new MockDiscord();
@@ -220,4 +217,109 @@ it('returns false when channel is not a team channel', () => {
     const result = isTeamChannel('non-valid-id');
 
     expect(result).toBeFalsy();
+});
+
+describe('isCooldown', () => {
+
+    it('returns true if count is 2 or higher and timeAgo is less then 10 minutes', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+        
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [2, Date.now()]);
+        
+        const result = isCooldown(channel);
+        
+        expect(result).toBeTruthy();
+    });
+    
+    it('returns false if count is 2 or higher and timeAgo is more than 10 minutes ago', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+        
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [2, Date.now() - 15 * 60 * 1000]);
+        
+        const result = isCooldown(channel);       
+       
+        expect(result).toBeFalsy();
+    });
+    
+    it('returns false if count is less than 2', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+        
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [1, Date.now() + 1000]);
+        
+        const result = isCooldown(channel);
+              
+        expect(result).toBeFalsy();
+    });
+
+});
+
+describe('updateCooldown', () => {
+    it('increases the count if time ago is less than ten minutes', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+        
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [4, Date.now() - 1 * 60 * 1000]);
+        
+        updateCooldown(channel);
+        
+        expect(client.teamCooldowns.get(channel.id)[0]).toBe(5);
+    });
+
+    it('sets the count to 1 if the time ago is more than 10 minutes', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+        
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [2, Date.now() - 11 * 60 * 1000]);
+        
+        updateCooldown(channel);  
+       
+        expect(client.teamCooldowns.get(channel.id)[0]).toBe(1);
+    });
+
+    it('updates the time ago', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+        
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [2, Date.now()]);
+        
+        updateCooldown(channel);  
+       
+        expect(client.teamCooldowns.get(channel.id)[0]).toBe(3);
+    });
+
+
+});
+
+describe('getCooldown', () => { 
+    
+    it('returns with the correct number of minutes and seconds', () => {
+        const discord = new MockDiscord();
+        const client = discord.getClient();
+        const channel = discord.getVoiceChannel();
+
+        client.teamCooldowns = new Collection();
+        client.teamCooldowns.set(channel.id, [1, Date.now() - (330 * 1000) ]);
+
+        let [minutes, seconds] = getCooldown(channel);
+
+        expect(minutes).toBe(4);
+        expect(seconds).toBe(30);
+
+    });
+
 });
