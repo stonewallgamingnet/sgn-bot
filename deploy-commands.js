@@ -1,16 +1,11 @@
 const { REST, Routes } = require('discord.js');
-require('dotenv').config();
+const config = process.env.NODE_ENV === 'production' ? {path: '/var/data/sgnbot/.env'} : {};
+require('dotenv').config(config);
 const fs = require('node:fs');
 
-/** sgnBot */
-// const GUILD_ID = "162955155875037184"; // sgn 
-// const CLIENT_ID = "377305806321877004"; //sgnBot
-// const DISCORD_TOKEN = "Mzc3MzA1ODA2MzIxODc3MDA0.DqGdgg.GbBjdGsYxsxfQjW7sAPFJzjoONM";
-
-/** devBot */
-GUILD_ID="375133424261791755"
-CLIENT_ID="500137506248065025"
-DISCORD_TOKEN="NTAwMTM3NTA2MjQ4MDY1MDI1.DqGeKw.yWjS2IHLkgUhKBdhn-YFULUu980"
+const GUILD_ID = process.env.DISCORD_GUILD_ID;
+const CLIENT_ID = process.env.DISCORD_CLIENT_ID;
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 
 const commands = [];
 // Grab all the command files from the commands directory you created earlier
