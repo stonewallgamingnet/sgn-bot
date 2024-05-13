@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { TeamChannel, isTeamChannel} = require('../TeamChannel');
+const { TeamChannel, isTeamChannel, isCooldown, updateCooldown, getCooldown} = require('../TeamChannel');
 
 module.exports = {
 	data: new SlashCommandBuilder()
