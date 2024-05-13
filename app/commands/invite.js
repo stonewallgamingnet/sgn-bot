@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, ChannelType, PermissionFlagsBits } = require('discord.js');
-const {TeamChannel, isTeamChannel} = require('../TeamChannel');
+const { TeamChannel, isTeamChannel } = require('../TeamChannel');
 
 module.exports = {
     data: new SlashCommandBuilder()
