@@ -10,7 +10,7 @@ module.exports = {
                 .setDescription('the member to invite')
                 .setRequired(true)
         )
-        .setDefaultMemberPermissions(0),
+        .setDefaultMemberPermissions(PermissionFlagsBits.Connect),
     async execute(interaction) {
         const channel = interaction.member.voice.channel;
         const channelIds = process.env.TEAM_UP_CHANNEL_IDS.split(',');

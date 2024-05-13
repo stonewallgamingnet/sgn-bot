@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 const { TeamChannel, isTeamChannel, isCooldown, updateCooldown, getCooldown} = require('../TeamChannel');
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
             option.setName('name')
                 .setDescription('New name for your current team channel.')
         )
-        .setDefaultMemberPermissions(0),
+        .setDefaultMemberPermissions(PermissionFlagsBits.Connect),
 	async execute(interaction) {
         const channel = interaction.member.voice.channel;
         const channelIds = process.env.TEAM_UP_CHANNEL_IDS.split(',');
