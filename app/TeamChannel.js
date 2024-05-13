@@ -142,7 +142,7 @@ function isCooldown(channel) {
     const teamCooldowns = channel.client.teamCooldowns;
 
     let [count, timeAgo] = teamCooldowns.get(channel.id);
-    console.log(count, 'count');
+    
     if(count >= maxThreshold && timeAgo > tenMinutesAgo) {
         return true;
     }
