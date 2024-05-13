@@ -71,10 +71,10 @@ afterEach(async () => {
 it('creates a new DiscordUser from a GuildMember', () => {
     const mockDiscord = new MockDiscord();
     const guildMember = mockDiscord.getGuildMember();
+
     const discordUser = DiscordUser.fromGuildMember(guildMember);
 
     expect(discordUser).toBeInstanceOf(DiscordUser);
-
     expect(discordUser.data.nickname).toBe('nick');
     expect(discordUser.data.username).toBe('USERNAME');
     expect(discordUser.data.discriminator).toBe('0000');
