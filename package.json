@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest watch",
     "ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "commands": "node ./deploy-commands.js && node ./index.js"
   },
   "keywords": [],
   "author": "",

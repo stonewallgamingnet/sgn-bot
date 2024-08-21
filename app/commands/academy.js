@@ -1,7 +1,7 @@
 const question_data = require('../../pathto2409_data.json');
 const questions = question_data.questions;
 
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
 
@@ -29,6 +29,8 @@ module.exports = {
         const volume = interaction.options.getInteger('volume');
         const chapter = interaction.options.getInteger('chapter');
 
+        let responseEmbed;
+
         // Iterate through the JSON data for matches
         const matches = questions.filter((question) => {
             if (question.volume == volume && question.chapter == chapter) {
@@ -38,13 +40,27 @@ module.exports = {
         })
 
         if (matches.length == 0) {
-            interaction.reply({ content: `That combination of volume and chapter number wasn't found. Please check the volume and chapter combination and try again.`, ephemeral: true})
+            responseEmbed = new EmbedBuilder()
+                .setTitle(`Path to 2409 Search - Error"`)
+                .setColor('#FF1111')
+                .setDescription("No matches found. Please check your spelling or rephrase your search.");
         } else if (matches.length > 1) {
-            interaction.reply({ content: `More than one match was found. There may be a problem with the volume and chapter combination you entered. Please try again.`, ephemeral: true})
+            responseEmbed = new EmbedBuilder()
+                .setTitle(`Path to 2409 Search - Error`)
+                .setColor('#FF1111')
+                .setDescription("More than one match found. Please refine your search.");
         } else {
-            let response = `Volume ${matches[0].volume}, Chapter ${matches[0].chapter}:\n> **Question**: ${matches[0].question}\n> **Answer**: ${matches[0].answer}`;
-            interaction.reply({ content: response, ephemeral: true})
+            let response = `> **Question**: ${matches[0].question}\n> **Answer**: ${matches[0].answer}`;
+            responseEmbed = new EmbedBuilder()
+                .setTitle(`Path to 2409 - Volume ${matches[0].volume}, Chapter ${matches[0].chapter}`)
+                .setColor('#0099ff')
+                .setDescription(response);
         }
+
+
+
+        // Reply to the user
+        interaction.reply({ embeds: [responseEmbed], ephemeral: true })
 
     }
 }
