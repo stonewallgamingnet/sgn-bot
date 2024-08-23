@@ -1,6 +1,5 @@
 import { it, expect, describe, vi } from 'vitest';
 import { execute, data } from './academy';
-import { getParsedCommand, mockInteractionAndSpyReply } from '../../tests/testutils';
 import MockDiscord  from '../../tests/mockDiscord';
 
 describe ("Academy Command", () => {

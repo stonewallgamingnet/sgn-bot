@@ -1,5 +1,5 @@
 const transwarps = require('../../transwarp_data.json');
-import { getMatches, formatOutput } from '../transwarp';
+const { getMatches, formatOutput } = require('../transwarp');
 
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
@@ -22,6 +22,8 @@ module.exports = {
         // Special cases - search string will be changed to match the JSON data
         if (searchString.toLowerCase().includes("ds9")) {
             searchString = "Deep Space Nine";
+        } else if (searchString.toLowerCase().includes("deep space 9")) {
+            searchString = "Deep Space Nine";
         } else if (searchString.toLowerCase().includes("earth")) {
             searchString = "Sol";
         } else if (searchString.toLowerCase().includes("qonos")) {
@@ -35,7 +37,7 @@ module.exports = {
         if (matches.length == 0) {
             interaction.reply({ content: `No matches found for ${searchString}. Please check your spelling or rephrase your search.`, ephemeral: true })
             return;
-        } else if (matches.length > 5) {
+        } else if (matches.length > 10) {
             interaction.reply({ content: `Too many matches found for "${searchString}". Please refine your search.`, ephemeral: true })
             return;
         }

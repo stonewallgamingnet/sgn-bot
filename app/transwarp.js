@@ -1,4 +1,4 @@
-export function getMatches(transwarps, searchString) {
+function getMatches(transwarps, searchString) {
     return transwarps.filter((transwarp) => {
         if (transwarp.destination.toLowerCase().includes(searchString.toLowerCase())) {
             return true;
@@ -7,7 +7,7 @@ export function getMatches(transwarps, searchString) {
     })
 }
 
-export function formatOutput(matches) {
+function formatOutput(matches) {
     let missionResultsList = [];
     let abilityResultsList = [];
     let fleetResultsList = [];
@@ -77,3 +77,5 @@ export function formatOutput(matches) {
 
     return resultsText;
 }
+
+module.exports = { getMatches, formatOutput }
