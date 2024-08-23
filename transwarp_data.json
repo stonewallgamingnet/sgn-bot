@@ -1,908 +1,906 @@
-{
-    "transwarps": [
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "The Vault",
-            "quadrant": "Beta",
-            "sector": "Sierra",
-            "destination": "Starbase 39-Sierra",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Blood of Ancients",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Sol",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Terran Gambit",
-            "missionname": "Red Shift",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Sol",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Age of Discovery",
-            "missionname": "Downfall",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Sol",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon War",
-            "missionname": "Stranded in Space",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "SS Azura",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Beneath the Skin",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Andoria",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon War",
-            "missionname": "Diplomatic Orders",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Vulcan System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Future Proof",
-            "missionname": "Ragnarok",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Procyon",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Age of Discovery",
-            "missionname": "Secrets",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "destination": "Delta Volanis Cluster",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "The Ninth Rule",
-            "quadrant": "Beta",
-            "sector": "Orion",
-            "destination": "Kinjer System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon War",
-            "missionname": "Secret Orders",
-            "destination": "Briar Patch",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "Brushfire",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "destination": "Briar Patch",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Within The Briars",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "destination": "Briar Patch",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Ruins of Doom",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "destination": "Imaga System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon War",
-            "missionname": "The Doomsday Device",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "destination": "Donia System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "The Measure of Morality",
-            "quadrant": "Beta",
-            "sector": "Ba'aja",
-            "destination": "Traelus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "Partisans",
-            "quadrant": "Beta",
-            "sector": "Hobus",
-            "destination": "Nimbus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Uneasy Allies",
-            "quadrant": "Beta",
-            "sector": "Hobus",
-            "destination": "Hobus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Taris",
-            "quadrant": "Beta",
-            "sector": "Hobus",
-            "destination": "Hobus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Yesterday's War",
-            "missionname": "Terminal Expanse",
-            "quadrant": "Beta",
-            "sector": "Celes",
-            "destination": "Delphic Region",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Age of Discovery",
-            "missionname": "The Plausibility of the Possible",
-            "quadrant": "Beta",
-            "sector": "Celes",
-            "destination": "Priors System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Age of Discovery",
-            "missionname": "Impossibility of Reason",
-            "quadrant": "Beta",
-            "sector": "Celes",
-            "destination": "Priors System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon War",
-            "missionname": "Secret Orders",
-            "quadrant": "Beta",
-            "sector": "Celes",
-            "destination": "Briar Patch",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon War",
-            "missionname": "Researcher Rescue",
-            "quadrant": "Beta",
-            "sector": "Kassae",
-            "destination": "Kassae System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Para Pacem",
-            "quadrant": "Beta",
-            "sector": "Kassae",
-            "destination": "Pahvo System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Illusion of Communication",
-            "quadrant": "Beta",
-            "sector": "Kassae",
-            "destination": "Pahvo System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Sentinels",
-            "quadrant": "Beta",
-            "sector": "Donatu",
-            "destination": "Donatu System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Time in a Bottle",
-            "quadrant": "Beta",
-            "sector": "Donatu",
-            "destination": "Drozana Station",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "Knowledge is Power",
-            "quadrant": "Beta",
-            "sector": "Boreth",
-            "destination": "Boreth System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "Leap of Faith",
-            "quadrant": "Beta",
-            "sector": "Boreth",
-            "destination": "Boreth System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "Warriors of the Empire",
-            "quadrant": "Beta",
-            "sector": "Boreth",
-            "destination": "Boreth System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "A Day Long Remembered",
-            "quadrant": "Beta",
-            "sector": "Boreth",
-            "destination": "Boreth System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Mine Enemy",
-            "quadrant": "Beta",
-            "sector": "Rator",
-            "destination": "Hfihar System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "J'Ula's Discovery",
-            "missionname": "Rescue and Search",
-            "quadrant": "Beta",
-            "sector": "Xarantine",
-            "destination": "Kern System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Yesterday's War",
-            "missionname": "Vorgon Conclusions",
-            "quadrant": "Beta",
-            "sector": "Lirss",
-            "destination": "Lirss System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Desperate Measures",
-            "quadrant": "Beta",
-            "sector": "Agrama",
-            "destination": "Pilatus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Empress Sela",
-            "quadrant": "Beta",
-            "sector": "Agrama",
-            "destination": "Agrama System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Shadow Play",
-            "quadrant": "Beta",
-            "sector": "Unroth",
-            "destination": "Cirini Prime System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Cutting the Cord",
-            "quadrant": "Beta",
-            "sector": "Unroth",
-            "destination": "Brea System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Yesterday's War",
-            "missionname": "Survivor",
-            "quadrant": "Beta",
-            "sector": "Unroth",
-            "destination": "Sitor System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Romulus",
-            "missionname": "All episodes",
-            "quadrant": "Beta",
-            "sector": "Azure",
-            "destination": "New Romulus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Solanae Dyson Sphere",
-            "missionname": "Sphere of Influence",
-            "quadrant": "Beta",
-            "sector": "Azure",
-            "destination": "New Romulus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Future Proof",
-            "missionname": "The Temporal Front",
-            "quadrant": "Beta",
-            "sector": "Azure",
-            "destination": "New Romulus System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Yesterday's War",
-            "missionname": "Temporal Ambassador",
-            "quadrant": "Beta",
-            "sector": "Azure",
-            "destination": "Azura Nebula",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "The Khitomer Discord",
-            "quadrant": "Beta",
-            "sector": "Khitomer",
-            "destination": "Khitomer System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Empire",
-            "missionname": "Manhunt",
-            "quadrant": "Beta",
-            "sector": "Khitomer",
-            "destination": "Beta Penthe System",
-            "transwarptype": "mission",
-            "notes": "KDF only"
-        },
-        {
-            "episodename": "Klingon Civil War",
-            "missionname": "The Centre Cannot Hold",
-            "quadrant": "Beta",
-            "sector": "Qo'noS",
-            "destination": "Qo'noS System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Borg Advance",
-            "missionname": "Fluid Dynamics",
-            "quadrant": "Beta",
-            "sector": "Alini",
-            "destination": "Kuda System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Borg Advance",
-            "missionname": "Assimilation",
-            "quadrant": "Beta",
-            "sector": "Alini",
-            "destination": "NGC-4447 System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Delta Flight",
-            "quadrant": "Beta",
-            "sector": "Alini",
-            "destination": "Calbridan System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Coliseum",
-            "quadrant": "Beta",
-            "sector": "Gasko",
-            "destination": "Nopada System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Borg Advance",
-            "missionname": "Where Angels Fear to Tread",
-            "quadrant": "Beta",
-            "sector": "Hotep",
-            "destination": "Hotep System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Borg Advance",
-            "missionname": "A Gathering Darkness",
-            "quadrant": "Beta",
-            "sector": "Hotep",
-            "destination": "Omicron Kappa System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "House Pegh",
-            "quadrant": "Beta",
-            "sector": "Iconia",
-            "destination": "Dinasia System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Romulan Mystery",
-            "missionname": "Frozen",
-            "quadrant": "Beta",
-            "sector": "Iconia",
-            "destination": "Dera System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Yesterday's War",
-            "missionname": "The Core of the Matter",
-            "quadrant": "Beta",
-            "sector": "Narendra",
-            "destination": "Galorndon Core System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "Mirrors and Smoke",
-            "quadrant": "Alpha",
-            "sector": "Gon'cra",
-            "destination": "Gon'Cra Nebula",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "Beyond the Nexus",
-            "quadrant": "Alpha",
-            "sector": "Rotanev",
-            "destination": "Rotanev System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Cardassian Struggle",
-            "missionname": "The New Link",
-            "quadrant": "Alpha",
-            "sector": "Orias",
-            "destination": "Orias System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "Melting Pot",
-            "quadrant": "Alpha",
-            "sector": "Antos",
-            "destination": "Dranuur System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Cardassian Struggle",
-            "missionname": "Spoils of War",
-            "quadrant": "Alpha",
-            "sector": "Cardassia",
-            "destination": "Badlands",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Cardassian Struggle",
-            "missionname": "The Factory",
-            "quadrant": "Alpha",
-            "sector": "Algira",
-            "destination": "Davos System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Terran Gambit",
-            "missionname": "Firewall",
-            "quadrant": "Alpha",
-            "sector": "Izar",
-            "destination": "Izar System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "Of Signs and Portents",
-            "quadrant": "Alpha",
-            "sector": "Ferenginar",
-            "destination": "Huranzi System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "Echoes of Light",
-            "quadrant": "Alpha",
-            "sector": "Maxia",
-            "destination": "Lukari System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Future Proof",
-            "missionname": "Stormbound",
-            "quadrant": "Alpha",
-            "sector": "Tzenketh",
-            "destination": "Na'kuhl System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Future Proof",
-            "missionname": "Sunrise",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "destination": "Deep Space Nine",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Future Proof",
-            "missionname": "Temporal Reckoning",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "destination": "Deep Space Nine",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "New Frontiers",
-            "missionname": "The Renegade's Regret",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "destination": "Deep Space Nine",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Gamma Quadrant",
-            "missionname": "Quark's Lucky Seven",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "destination": "Deep Space Nine",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Cardassian Struggle",
-            "missionname": "Jabberwocky",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "destination": "Bajor System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Gamma Quadrant",
-            "missionname": "The Search",
-            "quadrant": "Gamma",
-            "sector": "Idran",
-            "destination": "Dosi System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Gamma Quadrant",
-            "missionname": "Armistice",
-            "quadrant": "Gamma",
-            "sector": "Stakoron",
-            "destination": "Olt System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Gamma Quadrant",
-            "missionname": "Doomed to Repeat",
-            "quadrant": "Gamma",
-            "sector": "Masan",
-            "destination": "Masan System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Gamma Quadrant",
-            "missionname": "Home",
-            "quadrant": "Gamma",
-            "sector": "Gavara",
-            "destination": "Empersa System (Odo's Fleet)",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Gamma Quadrant",
-            "missionname": "Tenebris Torquent",
-            "quadrant": "Gamma",
-            "sector": "Gavara",
-            "destination": "Havas-Kul System (Garak's Fleet)",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Mindscape",
-            "quadrant": "Delta",
-            "sector": "Syllerran",
-            "destination": "Syllerran System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Takedown",
-            "quadrant": "Delta",
-            "sector": "Alsuran",
-            "destination": "Jenolan Dyson Sphere",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Broken Circle",
-            "quadrant": "Delta",
-            "sector": "Alsuran",
-            "destination": "Kyana System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Butterfly",
-            "quadrant": "Delta",
-            "sector": "Alsuran",
-            "destination": "Kyana System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Iconian War",
-            "missionname": "Midnight",
-            "quadrant": "Delta",
-            "sector": "Alsuran",
-            "destination": "Kyana System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Future Proof",
-            "missionname": "Time and Tide",
-            "quadrant": "Delta",
-            "sector": "Alsuran",
-            "destination": "Kyana System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Dust to Dust",
-            "quadrant": "Delta",
-            "sector": "Kotara",
-            "destination": "Kobali System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Reunion",
-            "quadrant": "Delta",
-            "sector": "Kotara",
-            "destination": "Entaba System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Alliances",
-            "quadrant": "Delta",
-            "sector": "Kotara",
-            "destination": "Al'yans System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "All That Glitters",
-            "quadrant": "Delta",
-            "sector": "Kotara",
-            "destination": "Shenda System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "What's Left Behind",
-            "quadrant": "Delta",
-            "sector": "Devore",
-            "destination": "Nal Shadaan System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Revelations",
-            "quadrant": "Delta",
-            "sector": "Markonia",
-            "destination": "Deep Space Signal",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "The Dragon's Deceit",
-            "quadrant": "Delta",
-            "sector": "Yontasa",
-            "destination": "Kartela System",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Capture the Flag",
-            "quadrant": "Delta",
-            "sector": "Yontasa",
-            "destination": "Orlitus Cluster",
-            "transwarptype": "mission"
-        },
-        {
-            "episodename": "Delta Quadrant",
-            "missionname": "Revolution",
-            "quadrant": "Delta",
-            "sector": "Yontasa",
-            "destination": "Molinya",
-            "transwarptype": "mission"
-        },
-        {
-            "destination": "Sol System",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "transwarptype": "builtin-fed",
-            "requirement": "Reach level 1"
-        },
-        {
-            "destination": "Qo'noS System",
-            "quadrant": "Beta",
-            "sector": "Qo'noS",
-            "transwarptype": "builtin-kdf",
-            "requirement": "Reach level 4"
-        },
-        {
-            "destination": "New Romulus System",
-            "quadrant": "Beta",
-            "sector": "Azure",
-            "transwarptype": "builtin-rom",
-            "requirement": "Reach level 10"
-        },
-        {
-            "destination": "Deep Space Nine",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "transwarptype": "builtin-dom",
-            "requirement": "None"
-        },
-        {
-            "destination": "Starbase K7, Sherman System",
-            "quadrant": "Beta",
-            "sector": "Aldebaran",
-            "transwarptype": "builtin-fed-align",
-            "requirement": "Diplomacy Rank II (Consul)"
-        },
-        {
-            "destination": "Romulan Space",
-            "quadrant": "Beta",
-            "sector": "Vendor",
-            "transwarptype": "builtin-kdf-align",
-            "requirement": "Marauding Rank II (Privateer)"
-        },
-        {
-            "destination": "Starbase 39-Sierra",
-            "quadrant": "Beta",
-            "sector": "Sierra",
-            "transwarptype": "builtin-fed-align",
-            "requirement": "Diplomacy Rank III (Envoy)"
-        },
-        {
-            "destination": "Risa",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "transwarptype": "builtin-kdf-align",
-            "requirement": "Marauding Rank III (Pirate)"
-        },
-        {
-            "destination": "Deep Space Nine/Cardassian Space",
-            "quadrant": "Alpha",
-            "sector": "Bajor",
-            "transwarptype": "builtin-unaligned",
-            "requirement": "Diplomacy Rank IV (Ambassador) or Marauding Rank IV (Marauder)"
-        },
-        {
-            "destination": "Vulcan System",
-            "quadrant": "Beta",
-            "sector": "Vulcan",
-            "transwarptype": "fleet-fed",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 1"
-        },
-        {
-            "destination": "Rura Penthe System",
-            "quadrant": "Beta",
-            "sector": "Rura Penthe",
-            "transwarptype": "fleet-kdf",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 1"
-        },
-        {
-            "destination": "Risa",
-            "quadrant": "Beta",
-            "sector": "Risa",
-            "transwarptype": "fleet-fed",
-            "requirement":"Fleet Starbase Tranwarp Conduit at Tier 2"
-        },
-        {
-            "destination": "Regulus System",
-            "quadrant": "Beta",
-            "sector": "Regulus",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 2"
-        },
-        {
-            "destination": "Gateway, Khitomer Sector",
-            "quadrant": "Beta",
-            "sector": "Khitomer",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 2"
-        },
-        {
-            "destination": "Haakona",
-            "quadrant": "Beta",
-            "sector": "Unroth",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 3"
-        },
-        {
-            "destination": "Romulus",
-            "quadrant": "Beta",
-            "sector": "Romulus",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 3"
-        },
-        {
-            "destination": "Minos (sometimes Minas) Korva",
-            "quadrant": "Alpha",
-            "sector": "Minos Korva",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 4"
-        },
-        {
-            "destination": "Arawath",
-            "quadrant": "Alpha",
-            "sector": "Arawath",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 4"
-        },
-        {
-            "destination": "Defera System",
-            "quadrant": "Alpha",
-            "sector": "Defera",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 5"
-        },
-        {
-            "destination": "Devore Sector",
-            "quadrant": "Delta",
-            "sector": "Devore",
-            "transwarptype": "fleet-unaligned",
-            "requirement": "Fleet Starbase Tranwarp Conduit at Tier 5"
-        },
-        {
-            "destination": "Tau Dewa Sector",
-            "quadrant": "Beta",
-            "sector": "Azure",
-            "transwarptype": "rep",
-            "requirement": "Tier 1 in New Romulus reputation"
-        },
-        {
-            "destination": "Defera System",
-            "quadrant": "Alpha",
-            "sector": "Defera",
-            "transwarptype": "rep",
-            "requirement":"Tier 1 in Task Force Omega reputation"
-        },
-        {
-            "destination": "Solanae Dyson Sphere",
-            "quadrant": "Delta",
-            "sector": "N/A",
-            "transwarptype": "rep",
-            "requirement": "Tier 1 in Dyson Joint Command reputation"
-        },
-        {
-            "destination": "Delta Quadrant",
-            "quadrant": "Delta",
-            "sector": "Alsuran",
-            "transwarptype": "rep",
-            "requirement": "Tier 1 in Delta Alliance reputation"
-        },
-        {
-            "destination": "Tzenkethi Battlezone, Gon'Cra Nebula",
-            "quadrant": "Alpha",
-            "sector": "Gon'Cra",
-            "transwarptype": "rep",
-            "requirement": "Tier 1 in Lukari Restoration Initiative reputation"
-        }
-    ]
-}
+[
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "The Vault",
+        "quadrant": "Beta",
+        "sector": "Sierra",
+        "destination": "Starbase 39-Sierra",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Blood of Ancients",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Sol",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Terran Gambit",
+        "missionname": "Red Shift",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Sol",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Age of Discovery",
+        "missionname": "Downfall",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Sol",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon War",
+        "missionname": "Stranded in Space",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "SS Azura",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Beneath the Skin",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Andoria",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon War",
+        "missionname": "Diplomatic Orders",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Vulcan System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Future Proof",
+        "missionname": "Ragnarok",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Procyon",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Age of Discovery",
+        "missionname": "Secrets",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "destination": "Delta Volanis Cluster",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "The Ninth Rule",
+        "quadrant": "Beta",
+        "sector": "Orion",
+        "destination": "Kinjer System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon War",
+        "missionname": "Secret Orders",
+        "destination": "Briar Patch",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "Brushfire",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "destination": "Briar Patch",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Within The Briars",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "destination": "Briar Patch",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Ruins of Doom",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "destination": "Imaga System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon War",
+        "missionname": "The Doomsday Device",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "destination": "Donia System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "The Measure of Morality",
+        "quadrant": "Beta",
+        "sector": "Ba'aja",
+        "destination": "Traelus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "Partisans",
+        "quadrant": "Beta",
+        "sector": "Hobus",
+        "destination": "Nimbus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Uneasy Allies",
+        "quadrant": "Beta",
+        "sector": "Hobus",
+        "destination": "Hobus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Taris",
+        "quadrant": "Beta",
+        "sector": "Hobus",
+        "destination": "Hobus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Yesterday's War",
+        "missionname": "Terminal Expanse",
+        "quadrant": "Beta",
+        "sector": "Celes",
+        "destination": "Delphic Region",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Age of Discovery",
+        "missionname": "The Plausibility of the Possible",
+        "quadrant": "Beta",
+        "sector": "Celes",
+        "destination": "Priors System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Age of Discovery",
+        "missionname": "Impossibility of Reason",
+        "quadrant": "Beta",
+        "sector": "Celes",
+        "destination": "Priors System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon War",
+        "missionname": "Secret Orders",
+        "quadrant": "Beta",
+        "sector": "Celes",
+        "destination": "Briar Patch",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon War",
+        "missionname": "Researcher Rescue",
+        "quadrant": "Beta",
+        "sector": "Kassae",
+        "destination": "Kassae System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Para Pacem",
+        "quadrant": "Beta",
+        "sector": "Kassae",
+        "destination": "Pahvo System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Illusion of Communication",
+        "quadrant": "Beta",
+        "sector": "Kassae",
+        "destination": "Pahvo System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Sentinels",
+        "quadrant": "Beta",
+        "sector": "Donatu",
+        "destination": "Donatu System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Time in a Bottle",
+        "quadrant": "Beta",
+        "sector": "Donatu",
+        "destination": "Drozana Station",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "Knowledge is Power",
+        "quadrant": "Beta",
+        "sector": "Boreth",
+        "destination": "Boreth System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "Leap of Faith",
+        "quadrant": "Beta",
+        "sector": "Boreth",
+        "destination": "Boreth System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "Warriors of the Empire",
+        "quadrant": "Beta",
+        "sector": "Boreth",
+        "destination": "Boreth System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "A Day Long Remembered",
+        "quadrant": "Beta",
+        "sector": "Boreth",
+        "destination": "Boreth System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Mine Enemy",
+        "quadrant": "Beta",
+        "sector": "Rator",
+        "destination": "Hfihar System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "J'Ula's Discovery",
+        "missionname": "Rescue and Search",
+        "quadrant": "Beta",
+        "sector": "Xarantine",
+        "destination": "Kern System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Yesterday's War",
+        "missionname": "Vorgon Conclusions",
+        "quadrant": "Beta",
+        "sector": "Lirss",
+        "destination": "Lirss System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Desperate Measures",
+        "quadrant": "Beta",
+        "sector": "Agrama",
+        "destination": "Pilatus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Empress Sela",
+        "quadrant": "Beta",
+        "sector": "Agrama",
+        "destination": "Agrama System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Shadow Play",
+        "quadrant": "Beta",
+        "sector": "Unroth",
+        "destination": "Cirini Prime System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Cutting the Cord",
+        "quadrant": "Beta",
+        "sector": "Unroth",
+        "destination": "Brea System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Yesterday's War",
+        "missionname": "Survivor",
+        "quadrant": "Beta",
+        "sector": "Unroth",
+        "destination": "Sitor System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Romulus",
+        "missionname": "All episodes",
+        "quadrant": "Beta",
+        "sector": "Azure",
+        "destination": "New Romulus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Solanae Dyson Sphere",
+        "missionname": "Sphere of Influence",
+        "quadrant": "Beta",
+        "sector": "Azure",
+        "destination": "New Romulus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Future Proof",
+        "missionname": "The Temporal Front",
+        "quadrant": "Beta",
+        "sector": "Azure",
+        "destination": "New Romulus System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Yesterday's War",
+        "missionname": "Temporal Ambassador",
+        "quadrant": "Beta",
+        "sector": "Azure",
+        "destination": "Azura Nebula",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "The Khitomer Discord",
+        "quadrant": "Beta",
+        "sector": "Khitomer",
+        "destination": "Khitomer System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Empire",
+        "missionname": "Manhunt",
+        "quadrant": "Beta",
+        "sector": "Khitomer",
+        "destination": "Beta Penthe System",
+        "transwarptype": "mission",
+        "notes": "KDF only"
+    },
+    {
+        "episodename": "Klingon Civil War",
+        "missionname": "The Centre Cannot Hold",
+        "quadrant": "Beta",
+        "sector": "Qo'noS",
+        "destination": "Qo'noS System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Borg Advance",
+        "missionname": "Fluid Dynamics",
+        "quadrant": "Beta",
+        "sector": "Alini",
+        "destination": "Kuda System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Borg Advance",
+        "missionname": "Assimilation",
+        "quadrant": "Beta",
+        "sector": "Alini",
+        "destination": "NGC-4447 System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Delta Flight",
+        "quadrant": "Beta",
+        "sector": "Alini",
+        "destination": "Calbridan System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Coliseum",
+        "quadrant": "Beta",
+        "sector": "Gasko",
+        "destination": "Nopada System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Borg Advance",
+        "missionname": "Where Angels Fear to Tread",
+        "quadrant": "Beta",
+        "sector": "Hotep",
+        "destination": "Hotep System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Borg Advance",
+        "missionname": "A Gathering Darkness",
+        "quadrant": "Beta",
+        "sector": "Hotep",
+        "destination": "Omicron Kappa System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "House Pegh",
+        "quadrant": "Beta",
+        "sector": "Iconia",
+        "destination": "Dinasia System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Romulan Mystery",
+        "missionname": "Frozen",
+        "quadrant": "Beta",
+        "sector": "Iconia",
+        "destination": "Dera System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Yesterday's War",
+        "missionname": "The Core of the Matter",
+        "quadrant": "Beta",
+        "sector": "Narendra",
+        "destination": "Galorndon Core System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "Mirrors and Smoke",
+        "quadrant": "Alpha",
+        "sector": "Gon'cra",
+        "destination": "Gon'Cra Nebula",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "Beyond the Nexus",
+        "quadrant": "Alpha",
+        "sector": "Rotanev",
+        "destination": "Rotanev System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Cardassian Struggle",
+        "missionname": "The New Link",
+        "quadrant": "Alpha",
+        "sector": "Orias",
+        "destination": "Orias System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "Melting Pot",
+        "quadrant": "Alpha",
+        "sector": "Antos",
+        "destination": "Dranuur System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Cardassian Struggle",
+        "missionname": "Spoils of War",
+        "quadrant": "Alpha",
+        "sector": "Cardassia",
+        "destination": "Badlands",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Cardassian Struggle",
+        "missionname": "The Factory",
+        "quadrant": "Alpha",
+        "sector": "Algira",
+        "destination": "Davos System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Terran Gambit",
+        "missionname": "Firewall",
+        "quadrant": "Alpha",
+        "sector": "Izar",
+        "destination": "Izar System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "Of Signs and Portents",
+        "quadrant": "Alpha",
+        "sector": "Ferenginar",
+        "destination": "Huranzi System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "Echoes of Light",
+        "quadrant": "Alpha",
+        "sector": "Maxia",
+        "destination": "Lukari System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Future Proof",
+        "missionname": "Stormbound",
+        "quadrant": "Alpha",
+        "sector": "Tzenketh",
+        "destination": "Na'kuhl System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Future Proof",
+        "missionname": "Sunrise",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "destination": "Deep Space Nine",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Future Proof",
+        "missionname": "Temporal Reckoning",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "destination": "Deep Space Nine",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "New Frontiers",
+        "missionname": "The Renegade's Regret",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "destination": "Deep Space Nine",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Gamma Quadrant",
+        "missionname": "Quark's Lucky Seven",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "destination": "Deep Space Nine",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Cardassian Struggle",
+        "missionname": "Jabberwocky",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "destination": "Bajor System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Gamma Quadrant",
+        "missionname": "The Search",
+        "quadrant": "Gamma",
+        "sector": "Idran",
+        "destination": "Dosi System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Gamma Quadrant",
+        "missionname": "Armistice",
+        "quadrant": "Gamma",
+        "sector": "Stakoron",
+        "destination": "Olt System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Gamma Quadrant",
+        "missionname": "Doomed to Repeat",
+        "quadrant": "Gamma",
+        "sector": "Masan",
+        "destination": "Masan System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Gamma Quadrant",
+        "missionname": "Home",
+        "quadrant": "Gamma",
+        "sector": "Gavara",
+        "destination": "Empersa System (Odo's Fleet)",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Gamma Quadrant",
+        "missionname": "Tenebris Torquent",
+        "quadrant": "Gamma",
+        "sector": "Gavara",
+        "destination": "Havas-Kul System (Garak's Fleet)",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Mindscape",
+        "quadrant": "Delta",
+        "sector": "Syllerran",
+        "destination": "Syllerran System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Takedown",
+        "quadrant": "Delta",
+        "sector": "Alsuran",
+        "destination": "Jenolan Dyson Sphere",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Broken Circle",
+        "quadrant": "Delta",
+        "sector": "Alsuran",
+        "destination": "Kyana System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Butterfly",
+        "quadrant": "Delta",
+        "sector": "Alsuran",
+        "destination": "Kyana System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Iconian War",
+        "missionname": "Midnight",
+        "quadrant": "Delta",
+        "sector": "Alsuran",
+        "destination": "Kyana System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Future Proof",
+        "missionname": "Time and Tide",
+        "quadrant": "Delta",
+        "sector": "Alsuran",
+        "destination": "Kyana System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Dust to Dust",
+        "quadrant": "Delta",
+        "sector": "Kotara",
+        "destination": "Kobali System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Reunion",
+        "quadrant": "Delta",
+        "sector": "Kotara",
+        "destination": "Entaba System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Alliances",
+        "quadrant": "Delta",
+        "sector": "Kotara",
+        "destination": "Al'yans System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "All That Glitters",
+        "quadrant": "Delta",
+        "sector": "Kotara",
+        "destination": "Shenda System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "What's Left Behind",
+        "quadrant": "Delta",
+        "sector": "Devore",
+        "destination": "Nal Shadaan System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Revelations",
+        "quadrant": "Delta",
+        "sector": "Markonia",
+        "destination": "Deep Space Signal",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "The Dragon's Deceit",
+        "quadrant": "Delta",
+        "sector": "Yontasa",
+        "destination": "Kartela System",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Capture the Flag",
+        "quadrant": "Delta",
+        "sector": "Yontasa",
+        "destination": "Orlitus Cluster",
+        "transwarptype": "mission"
+    },
+    {
+        "episodename": "Delta Quadrant",
+        "missionname": "Revolution",
+        "quadrant": "Delta",
+        "sector": "Yontasa",
+        "destination": "Molinya",
+        "transwarptype": "mission"
+    },
+    {
+        "destination": "Sol System",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "transwarptype": "builtin-fed",
+        "requirement": "Reach level 1"
+    },
+    {
+        "destination": "Qo'noS System",
+        "quadrant": "Beta",
+        "sector": "Qo'noS",
+        "transwarptype": "builtin-kdf",
+        "requirement": "Reach level 4"
+    },
+    {
+        "destination": "New Romulus System",
+        "quadrant": "Beta",
+        "sector": "Azure",
+        "transwarptype": "builtin-rom",
+        "requirement": "Reach level 10"
+    },
+    {
+        "destination": "Deep Space Nine",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "transwarptype": "builtin-dom",
+        "requirement": "None"
+    },
+    {
+        "destination": "Starbase K7, Sherman System",
+        "quadrant": "Beta",
+        "sector": "Aldebaran",
+        "transwarptype": "builtin-fed-align",
+        "requirement": "Diplomacy Rank II (Consul)"
+    },
+    {
+        "destination": "Romulan Space",
+        "quadrant": "Beta",
+        "sector": "Vendor",
+        "transwarptype": "builtin-kdf-align",
+        "requirement": "Marauding Rank II (Privateer)"
+    },
+    {
+        "destination": "Starbase 39-Sierra",
+        "quadrant": "Beta",
+        "sector": "Sierra",
+        "transwarptype": "builtin-fed-align",
+        "requirement": "Diplomacy Rank III (Envoy)"
+    },
+    {
+        "destination": "Risa",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "transwarptype": "builtin-kdf-align",
+        "requirement": "Marauding Rank III (Pirate)"
+    },
+    {
+        "destination": "Deep Space Nine/Cardassian Space",
+        "quadrant": "Alpha",
+        "sector": "Bajor",
+        "transwarptype": "builtin-unaligned",
+        "requirement": "Diplomacy Rank IV (Ambassador) or Marauding Rank IV (Marauder)"
+    },
+    {
+        "destination": "Vulcan System",
+        "quadrant": "Beta",
+        "sector": "Vulcan",
+        "transwarptype": "fleet-fed",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 1"
+    },
+    {
+        "destination": "Rura Penthe System",
+        "quadrant": "Beta",
+        "sector": "Rura Penthe",
+        "transwarptype": "fleet-kdf",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 1"
+    },
+    {
+        "destination": "Risa",
+        "quadrant": "Beta",
+        "sector": "Risa",
+        "transwarptype": "fleet-fed",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 2"
+    },
+    {
+        "destination": "Regulus System",
+        "quadrant": "Beta",
+        "sector": "Regulus",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 2"
+    },
+    {
+        "destination": "Gateway, Khitomer Sector",
+        "quadrant": "Beta",
+        "sector": "Khitomer",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 2"
+    },
+    {
+        "destination": "Haakona",
+        "quadrant": "Beta",
+        "sector": "Unroth",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 3"
+    },
+    {
+        "destination": "Romulus",
+        "quadrant": "Beta",
+        "sector": "Romulus",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 3"
+    },
+    {
+        "destination": "Minos (sometimes Minas) Korva",
+        "quadrant": "Alpha",
+        "sector": "Minos Korva",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 4"
+    },
+    {
+        "destination": "Arawath",
+        "quadrant": "Alpha",
+        "sector": "Arawath",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 4"
+    },
+    {
+        "destination": "Defera System",
+        "quadrant": "Alpha",
+        "sector": "Defera",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 5"
+    },
+    {
+        "destination": "Devore Sector",
+        "quadrant": "Delta",
+        "sector": "Devore",
+        "transwarptype": "fleet-unaligned",
+        "requirement": "Fleet Starbase Tranwarp Conduit at Tier 5"
+    },
+    {
+        "destination": "Tau Dewa Sector",
+        "quadrant": "Beta",
+        "sector": "Azure",
+        "transwarptype": "rep",
+        "requirement": "Tier 1 in New Romulus reputation"
+    },
+    {
+        "destination": "Defera System",
+        "quadrant": "Alpha",
+        "sector": "Defera",
+        "transwarptype": "rep",
+        "requirement": "Tier 1 in Task Force Omega reputation"
+    },
+    {
+        "destination": "Solanae Dyson Sphere",
+        "quadrant": "Delta",
+        "sector": "N/A",
+        "transwarptype": "rep",
+        "requirement": "Tier 1 in Dyson Joint Command reputation"
+    },
+    {
+        "destination": "Delta Quadrant",
+        "quadrant": "Delta",
+        "sector": "Alsuran",
+        "transwarptype": "rep",
+        "requirement": "Tier 1 in Delta Alliance reputation"
+    },
+    {
+        "destination": "Tzenkethi Battlezone, Gon'Cra Nebula",
+        "quadrant": "Alpha",
+        "sector": "Gon'Cra",
+        "transwarptype": "rep",
+        "requirement": "Tier 1 in Lukari Restoration Initiative reputation"
+    }
+]

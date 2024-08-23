@@ -1,5 +1,4 @@
-const question_data = require('../../pathto2409_data.json');
-const questions = question_data.questions;
+const questions = require('../../academy_data.json');
 
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
@@ -56,8 +55,6 @@ module.exports = {
                 .setColor('#0099ff')
                 .setDescription(response);
         }
-
-
 
         // Reply to the user
         interaction.reply({ embeds: [responseEmbed], ephemeral: true })

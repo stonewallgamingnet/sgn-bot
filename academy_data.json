@@ -1,0 +1,998 @@
+[
+    {
+        "volume": 1,
+        "chapter": 1,
+        "question": "Who was the first praetor after Shinzon's death?",
+        "answer": "Tal'aura"
+    },
+    {
+        "volume": 1,
+        "chapter": 2,
+        "question": "Which ship was retrofitted in late 2379?",
+        "answer": "U.S.S. Enterprise-E"
+    },
+    {
+        "volume": 1,
+        "chapter": 3,
+        "question": "Who led the Andak project on Cardassia Prime?",
+        "answer": "Keiko O'Brien"
+    },
+    {
+        "volume": 2,
+        "chapter": 1,
+        "question": "Who led the Romulan forces fighting the Remans?",
+        "answer": "Tomalak"
+    },
+    {
+        "volume": 2,
+        "chapter": 2,
+        "question": "Who was the first Empress of the Imperial Romulan State?",
+        "answer": "Donatra"
+    },
+    {
+        "volume": 2,
+        "chapter": 3,
+        "question": "With which planet did the Romulans in the unification movement want to reconnect?",
+        "answer": "Vulcan"
+    },
+    {
+        "volume": 2,
+        "chapter": 4,
+        "question": "Who did the Cardassian government turn over for prosecution?",
+        "answer": "No one"
+    },
+    {
+        "volume": 2,
+        "chapter": 5,
+        "question": "On Stardate 58839.03, construction on a Starfleet ship begain in San Francisco. What ship was it?",
+        "answer": "U.S.S. Stargazer-A"
+    },
+    {
+        "volume": 3,
+        "chapter": 1,
+        "question": "What was in short supply on the Romulan homeworld?",
+        "answer": "Food"
+    },
+    {
+        "volume": 3,
+        "chapter": 2,
+        "question": "Which family rejected Tal'aura's reorganization of the Romulan Senate?",
+        "answer": "The line of Tellus"
+    },
+    {
+        "volume": 3,
+        "chapter": 3,
+        "question": "Which planet did the Klingons take from the Romulans?",
+        "answer": "Khitomer"
+    },
+    {
+        "volume": 3,
+        "chapter": 4,
+        "question": "Who did the Klingons fight when they conquered Khitomer?",
+        "answer": "The Romulans"
+    },
+    {
+        "volume": 4,
+        "chapter": 5,
+        "question": "Who argued against aid for the Unification movement on Romulus?",
+        "answer": "T'Los of Vulcan"
+    },
+    {
+        "volume": 4,
+        "chapter": 6,
+        "question": "What did the Doctor sue to keep from Starfleet?",
+        "answer": "Mobile emitter"
+    },
+    {
+        "volume": 3,
+        "chapter": 7,
+        "question": "How many Cardassians disappeared from Cardassia Prime in 2382?",
+        "answer": "472"
+    },
+    {
+        "volume": 4,
+        "chapter": 1,
+        "question": "Why did violence break out in the Romulan capital?",
+        "answer": "Food rationing"
+    },
+    {
+        "volume": 4,
+        "chapter": 2,
+        "question": "Who defected to join the Imperial Romulan State?",
+        "answer": "Admiral Taris"
+    },
+    {
+        "volume": 4,
+        "chapter": 3,
+        "question": "Which religious group became popular on Cardassia Prime?",
+        "answer": "The Oralians"
+    },
+    {
+        "volume": 4,
+        "chapter": 4,
+        "question": "Who did Martok defeat in a duel of honor?",
+        "answer": "Councilor Qolka"
+    },
+    {
+        "volume": 4,
+        "chapter": 5,
+        "question": "Which group began work to develop a mobile emitter?",
+        "answer": "Soong Foundation"
+    },
+    {
+        "volume": 5,
+        "chapter": 1,
+        "question": "Who was Tal'aura's new proconsul?",
+        "answer": "Sela"
+    },
+    {
+        "volume": 5,
+        "chapter": 2,
+        "question": "Who went to Romulus to speak for the Imperial Romulan State?",
+        "answer": "Admiral Taris"
+    },
+    {
+        "volume": 5,
+        "chapter": 3,
+        "question": "How did Tal'aura die?",
+        "answer": "Assassinated as she slept"
+    },
+    {
+        "volume": 5,
+        "chapter": 4,
+        "question": "Who attacked the I.K.S. Quv?",
+        "answer": "A Gorn ship"
+    },
+    {
+        "volume": 5,
+        "chapter": 5,
+        "question": "Where did Odo and Laas meet?",
+        "answer": "Koralis III"
+    },
+    {
+        "volume": 5,
+        "chapter": 6,
+        "question": "Which organization was trying to restore B-4?",
+        "answer": "Soong Foundation"
+    },
+    {
+        "volume": 6,
+        "chapter": 1,
+        "question": "Where did Jean-Luc Picard go during his final mission as captain of the U.S.S. Enterprise-E?",
+        "answer": "Khitomer"
+    },
+    {
+        "volume": 6,
+        "chapter": 2,
+        "question": "Which ship was Beverly Crusher given when she was promoted to captain?",
+        "answer": "U.S.S. Pasteur"
+    },
+    {
+        "volume": 6,
+        "chapter": 3,
+        "question": "Which former Enterprise-E officer helped unlock the Data Matrix?",
+        "answer": "Geordi La Forge"
+    },
+    {
+        "volume": 6,
+        "chapter": 4,
+        "question": "Which organization did Seven of Nine join?",
+        "answer": "Daystrom Institute"
+    },
+    {
+        "volume": 6,
+        "chapter": 5,
+        "question": "Who was the leader of the Tal Shiar?",
+        "answer": "Rehaek"
+    },
+    {
+        "volume": 6,
+        "chapter": 6,
+        "question": "Who lost the campaign for Praetor after Tal'aura's death?",
+        "answer": "Sela"
+    },
+    {
+        "volume": 6,
+        "chapter": 7,
+        "question": "Who did Donatra ally with after Tal'aura's death?",
+        "answer": "The Remans"
+    },
+    {
+        "volume": 7,
+        "chapter": 1,
+        "question": "Which planet was overmined according to the Romulan Mining Guild?",
+        "answer": "Remus"
+    },
+    {
+        "volume": 7,
+        "chapter": 2,
+        "question": "To which planet did the Remans relocate?",
+        "answer": "Crateris"
+    },
+    {
+        "volume": 7,
+        "chapter": 3,
+        "question": "Whom did Rehaek blame for the assassination of Praetor Tal'aura?",
+        "answer": "The Nobles"
+    },
+    {
+        "volume": 7,
+        "chapter": 4,
+        "question": "Who convinced the praetor to commute Sela's death sentence?",
+        "answer": "Donatra"
+    },
+    {
+        "volume": 7,
+        "chapter": 5,
+        "question": "What position was Data given when he returned to Starfleet?",
+        "answer": "Captain of the U.S.S. Enterprise-E"
+    },
+    {
+        "volume": 7,
+        "chapter": 6,
+        "question": "Who conquered Gila IV?",
+        "answer": "The Klingon Empire"
+    },
+    {
+        "volume": 7,
+        "chapter": 7,
+        "question": "How much did a protest permit cost on Ferenginar?",
+        "answer": "One bar of gold-pressed latinum"
+    },
+    {
+        "volume": 7,
+        "chapter": 8,
+        "question": "Who was the First of the Alpha Jem'Hadar?",
+        "answer": "Lamat'Ukan"
+    },
+    {
+        "volume": 8,
+        "chapter": 1,
+        "question": "Who designed the Jellyfish?",
+        "answer": "Geordi La Forge"
+    },
+    {
+        "volume": 8,
+        "chapter": 2,
+        "question": "Who killed Raimus?",
+        "answer": "Hassan the Undying"
+    },
+    {
+        "volume": 8,
+        "chapter": 3,
+        "question": "What proposal by the Grand Nagus was rejected in 2387?",
+        "answer": "Ferengi alliance with the Federation"
+    },
+    {
+        "volume": 8,
+        "chapter": 4,
+        "question": "Which planet did the Jem'Hadar occupy?",
+        "answer": "Devros II"
+    },
+    {
+        "volume": 8,
+        "chapter": 5,
+        "question": "Which group first detected radiation fluctuations in the Hobus star?",
+        "answer": "Romulan Mining Guild"
+    },
+    {
+        "volume": 8,
+        "chapter": 6,
+        "question": "Who did Donatra order to return to Romulus?",
+        "answer": "Admiral Taris"
+    },
+    {
+        "volume": 8,
+        "chapter": 7,
+        "question": "How long did the Romulan military report it would take to evacuate the home world?",
+        "answer": "Six weeks"
+    },
+    {
+        "volume": 8,
+        "chapter": 8,
+        "question": "Who did Martok appoint to be a commander of the Klingon fleet?",
+        "answer": "Worf"
+    },
+    {
+        "volume": 8,
+        "chapter": 9,
+        "question": "Which ship was lost in the Hobus system with the Jellyfish?",
+        "answer": "Narada"
+    },
+    {
+        "volume": 9,
+        "chapter": 1,
+        "question": "Which world was the first to claim the title of capital of the Romulan star empire?",
+        "answer": "Rator III"
+    },
+    {
+        "volume": 9,
+        "chapter": 2,
+        "question": "Which faction refused to send aid to the Romulans?",
+        "answer": "Klingon Empire"
+    },
+    {
+        "volume": 9,
+        "chapter": 3,
+        "question": "Who led the faction of the High Council that blamed the Federation for the loss of the fleet?",
+        "answer": "J'mpok"
+    },
+    {
+        "volume": 9,
+        "chapter": 4,
+        "question": "What is the name of Worf's second son?",
+        "answer": "K'Dhan"
+    },
+    {
+        "volume": 9,
+        "chapter": 5,
+        "question": "How many planets withdrew their ambassadors to Vulcan?",
+        "answer": "19"
+    },
+    {
+        "volume": 10,
+        "chapter": 1,
+        "question": "How many Romulans attempted to take over as emperor in 2389?",
+        "answer": "5"
+    },
+    {
+        "volume": 10,
+        "chapter": 2,
+        "question": "Which faction allied with the Gorn?",
+        "answer": "Nausicaans"
+    },
+    {
+        "volume": 10,
+        "chapter": 3,
+        "question": "What was the name of B'Vat's son?",
+        "answer": "K'das"
+    },
+    {
+        "volume": 10,
+        "chapter": 4,
+        "question": "Where did Gul Madred build a mining operation?",
+        "answer": "Septimus system"
+    },
+    {
+        "volume": 10,
+        "chapter": 5,
+        "question": "Who was the Federation Council representative from Vulcan?",
+        "answer": "T'Los"
+    },
+    {
+        "volume": 10,
+        "chapter": 6,
+        "question": "What happened to expand the Doctor's lawsuit?",
+        "answer": "It became a class-action suit covering all sentient artificial lifeforms in the Federation"
+    },
+    {
+        "volume": 11,
+        "chapter": 1,
+        "question": "Which group wanted protection from Nausicaan raiders?",
+        "answer": "Federation transport union"
+    },
+    {
+        "volume": 11,
+        "chapter": 2,
+        "question": "How many recommendations did the Klingon defense force have to improve their status?",
+        "answer": "Three"
+    },
+    {
+        "volume": 11,
+        "chapter": 3,
+        "question": "Which Romulan colony requested federation protection?",
+        "answer": "Talvath"
+    },
+    {
+        "volume": 11,
+        "chapter": 4,
+        "question": "Who did the crew of the U.S.S. Pasteur work with to develop a treatment for Yarmin Fel syndrome?",
+        "answer": "Cardassian ministry of science"
+    },
+    {
+        "volume": 11,
+        "chapter": 5,
+        "question": "Which group sought to block the class-action lawsuit dealing with the rights of artificial lifeforms?",
+        "answer": "Holonovel publishers and programmers"
+    },
+    {
+        "volume": 11,
+        "chapter": 6,
+        "question": "Which ship explored the McAllister C-5 nebula?",
+        "answer": "U.S.S. Enterprise-E"
+    },
+    {
+        "volume": 11,
+        "chapter": 7,
+        "question": "Who met with the leaders of the Federation transport union?",
+        "answer": "Nan Bacco"
+    },
+    {
+        "volume": 12,
+        "chapter": 1,
+        "question": "Who met with leaders of the Federation transport union?",
+        "answer": "Federation president Nan Bacco"
+    },
+    {
+        "volume": 12,
+        "chapter": 2,
+        "question": "What was the name of the Klingon who planted the explosive at the peace conference?",
+        "answer": "J'dah"
+    },
+    {
+        "volume": 12,
+        "chapter": 3,
+        "question": "Who did the Gorn talk to about an alliance?",
+        "answer": "The Letheans"
+    },
+    {
+        "volume": 12,
+        "chapter": 4,
+        "question": "Who led the Klingon invasion into the Zeta Pictoris system?",
+        "answer": "J'mpok"
+    },
+    {
+        "volume": 12,
+        "chapter": 5,
+        "question": "Where did Sela and her followers settle?",
+        "answer": "Makar"
+    },
+    {
+        "volume": 12,
+        "chapter": 6,
+        "question": "Who agreed to finance the reconstruction of the Cardassan industrial complex?",
+        "answer": "Grand Nagus Rom"
+    },
+    {
+        "volume": 12,
+        "chapter": 7,
+        "question": "What did the Soong foundation want to add to the Federation constitution?",
+        "answer": "Rights for artificial lifeforms"
+    },
+    {
+        "volume": 12,
+        "chapter": 8,
+        "question": "Which ship was successful with and extremely diverse crew?",
+        "answer": "U.S.S. Titan"
+    },
+    {
+        "volume": 13,
+        "chapter": 1,
+        "question": "Who won the election for federation president?",
+        "answer": "Aennik Okeg"
+    },
+    {
+        "volume": 13,
+        "chapter": 2,
+        "question": "Where were the 2392 peace talks held?",
+        "answer": "Cestus III"
+    },
+    {
+        "volume": 13,
+        "chapter": 3,
+        "question": "Which great house was supporting J'mpok in 2392?",
+        "answer": "The House of Torg"
+    },
+    {
+        "volume": 13,
+        "chapter": 4,
+        "question": "Who did Gul Madred start exporting ore to?",
+        "answer": "Romulans"
+    },
+    {
+        "volume": 13,
+        "chapter": 5,
+        "question": "What was the name of the Romulan capital?",
+        "answer": "Rihan"
+    },
+    {
+        "volume": 14,
+        "chapter": 1,
+        "question": "Who did J'mpok ban from the great hall?",
+        "answer": "Ambassador Worf"
+    },
+    {
+        "volume": 14,
+        "chapter": 2,
+        "question": "What is the name of the group that guards the Klingon chancellor?",
+        "answer": "Yan-Isleth"
+    },
+    {
+        "volume": 14,
+        "chapter": 3,
+        "question": "Who was the arbiter of succession?",
+        "answer": "B'vat"
+    },
+    {
+        "volume": 14,
+        "chapter": 4,
+        "question": "Which worlds joined the Federation in 2393?",
+        "answer": "Bajor and Tama Prime"
+    },
+    {
+        "volume": 14,
+        "chapter": 5,
+        "question": "Which ship met with a being claiming to be from the Metron Consortium?",
+        "answer": "U.S.S. Stargazer-A"
+    },
+    {
+        "volume": 14,
+        "chapter": 6,
+        "question": "Which group did Gul Madred hire to protect his mines?",
+        "answer": "Alpha Jem'Hadar"
+    },
+    {
+        "volume": 14,
+        "chapter": 7,
+        "question": "Who did Taris clash with over the role of the military?",
+        "answer": "General Tebok"
+    },
+    {
+        "volume": 15,
+        "chapter": 1,
+        "question": "In what system does the house of J'mpok own property?",
+        "answer": "Pheben"
+    },
+    {
+        "volume": 15,
+        "chapter": 2,
+        "question": "On which planet did Melani D'ian settle?",
+        "answer": "Ter'jas Mor"
+    },
+    {
+        "volume": 15,
+        "chapter": 3,
+        "question": "What happened to crime rates after Melani D'ian took control of the Orion syndicate?",
+        "answer": "Increased significantly"
+    },
+    {
+        "volume": 15,
+        "chapter": 4,
+        "question": "What was the new name for the Romulan capital city being constructed on Rator III?",
+        "answer": "Nova Roma"
+    },
+    {
+        "volume": 15,
+        "chapter": 5,
+        "question": "Which photonic lifeform was declared sentient by the Federation supreme court?",
+        "answer": "The Doctor"
+    },
+    {
+        "volume": 15,
+        "chapter": 6,
+        "question": "What was the name of Alexander Rozhenko's son?",
+        "answer": "D'Vak"
+    },
+    {
+        "volume": 16,
+        "chapter": 1,
+        "question": "Where was the U.S.S. Kelso when it was destroyed?",
+        "answer": "Devron Sector"
+    },
+    {
+        "volume": 16,
+        "chapter": 2,
+        "question": "How many members of Starfleet security where court-martialed after the destruction of the U.S.S. Kelso?",
+        "answer": "Six"
+    },
+    {
+        "volume": 16,
+        "chapter": 3,
+        "question": "What rank was the Doctor's Starfleet commission?",
+        "answer": "Lieutenant Commander"
+    },
+    {
+        "volume": 16,
+        "chapter": 4,
+        "question": "What races rebuilt the monastery at P'Jem?",
+        "answer": "Vulcan, Human, and Andorian"
+    },
+    {
+        "volume": 16,
+        "chapter": 5,
+        "question": "Where was Ja'rod when he was ambushed?",
+        "answer": "Rha'darus"
+    },
+    {
+        "volume": 17,
+        "chapter": 1,
+        "question": "Who developed a treatment for Bloodfire?",
+        "answer": "Beverly Crusher"
+    },
+    {
+        "volume": 17,
+        "chapter": 2,
+        "question": "How many warships were missing from Cardassia Prime?",
+        "answer": "At least 75"
+    },
+    {
+        "volume": 17,
+        "chapter": 3,
+        "question": "Who was the leader of the Klingon defense force's seventh fleet?",
+        "answer": "D'ald"
+    },
+    {
+        "volume": 17,
+        "chapter": 4,
+        "question": "Which house did captain Klor owe fealty to?",
+        "answer": "House of Martok"
+    },
+    {
+        "volume": 17,
+        "chapter": 5,
+        "question": "Who were trading ships and weapons for Sela's decalithium?",
+        "answer": "Dopterians"
+    },
+    {
+        "volume": 17,
+        "chapter": 6,
+        "question": "Who was the captain of the U.S.S. Cochrane?",
+        "answer": "T'Vix"
+    },
+    {
+        "volume": 18,
+        "chapter": 1,
+        "question": "Which ship was Geordi la Forge given command of when he was promoted to captain?",
+        "answer": "U.S.S. Challenger"
+    },
+    {
+        "volume": 18,
+        "chapter": 2,
+        "question": "Who restored the house of Duras to legitimacy?",
+        "answer": "J'mpok"
+    },
+    {
+        "volume": 18,
+        "chapter": 3,
+        "question": "Who moved to the former Orion homeworld in 2397?",
+        "answer": "Hassan the Undying"
+    },
+    {
+        "volume": 18,
+        "chapter": 4,
+        "question": "What did general Tebok refuse to do in 2397?",
+        "answer": "Fire on civilians on Kevatras"
+    },
+    {
+        "volume": 19,
+        "chapter": 1,
+        "question": "Which beings did the Federation council exclude form the dual citizenship program?",
+        "answer": "Artificial lifeforms"
+    },
+    {
+        "volume": 19,
+        "chapter": 2,
+        "question": "Rhea was the first person granted dual citizenship in the Federation. Where else did she hold citizenship?",
+        "answer": "Ferenginar"
+    },
+    {
+        "volume": 19,
+        "chapter": 3,
+        "question": "What bloc helped Aennik Okeg win a second term as Federation President?",
+        "answer": "New voters with dual citizenship"
+    },
+    {
+        "volume": 19,
+        "chapter": 4,
+        "question": "Which ship was Naomi Wildman assigned to?",
+        "answer": "U.S.S. Hathaway"
+    },
+    {
+        "volume": 19,
+        "chapter": 5,
+        "question": "What kind of explosive was used in the attack on the peace conference in 2398?",
+        "answer": "Ultritium resin"
+    },
+    {
+        "volume": 19,
+        "chapter": 6,
+        "question": "Who took command of the Romulan second fleet?",
+        "answer": "General Velal"
+    },
+    {
+        "volume": 20,
+        "chapter": 1,
+        "question": "Who inspired many Ferengi to apply to Starfleet academy?",
+        "answer": "Nog"
+    },
+    {
+        "volume": 20,
+        "chapter": 2,
+        "question": "Which technology formed the basis of Starfleet's transwarp network?",
+        "answer": "Borg"
+    },
+    {
+        "volume": 20,
+        "chapter": 3,
+        "question": "What did Tebok's crew think was causing the malfunctions on the Alth'Indor?",
+        "answer": "Computer virus"
+    },
+    {
+        "volume": 20,
+        "chapter": 4,
+        "question": "What did J'mpok call the Undine?",
+        "answer": "qa'meH quv"
+    },
+    {
+        "volume": 20,
+        "chapter": 5,
+        "question": "Who condemned the Klingon invasion of the Gorn hegemony?",
+        "answer": "Federation council"
+    },
+    {
+        "volume": 20,
+        "chapter": 6,
+        "question": "Who was allowed to stay in the first city after Federation citizens were asked to leave?",
+        "answer": "Worf"
+    },
+    {
+        "volume": 21,
+        "chapter": 1,
+        "question": "What did the Federation do after the outbreak of war between the Klingons and the Gorn?",
+        "answer": "Reinforced borders and outposts"
+    },
+    {
+        "volume": 21,
+        "chapter": 2,
+        "question": "In 2400, what did the Federation council declare to be illegal?",
+        "answer": "Gorn-Klingon war"
+    },
+    {
+        "volume": 21,
+        "chapter": 3,
+        "question": "Where was Harry Kim assigned in 2400?",
+        "answer": "Starbase 11"
+    },
+    {
+        "volume": 21,
+        "chapter": 4,
+        "question": "Who was investigating the destruction of the I.R.W. Alth'Indor?",
+        "answer": "Sela"
+    },
+    {
+        "volume": 22,
+        "chapter": 1,
+        "question": "Where did Sela and general Velal meet in 2401?",
+        "answer": "Zeta Voltantis"
+    },
+    {
+        "volume": 22,
+        "chapter": 2,
+        "question": "Who was elected to lead the Cardassian union in 2401?",
+        "answer": "Natima Lang"
+    },
+    {
+        "volume": 22,
+        "chapter": 3,
+        "question": "Who was revealed to be an Undine in 2401?",
+        "answer": "Councilor Konjah"
+    },
+    {
+        "volume": 22,
+        "chapter": 4,
+        "question": "In 2401, which ship attempted to aid the Gorn?",
+        "answer": "U.S.S. Lindberg"
+    },
+    {
+        "volume": 22,
+        "chapter": 5,
+        "question": "Who resigned his post after the Federation council refused to change their position on the Gorn-Klingon war?",
+        "answer": "Worf"
+    },
+    {
+        "volume": 22,
+        "chapter": 6,
+        "question": "Who was named head of Starfleet corps of engineers in 2401?",
+        "answer": "Miles O'Brien"
+    },
+    {
+        "volume": 23,
+        "chapter": 1,
+        "question": "Who blockaded the Gorn homeworld in 2402?",
+        "answer": "Klingons and Orions"
+    },
+    {
+        "volume": 23,
+        "chapter": 2,
+        "question": "In 2402, Klingons attacked a Starfleet vessel during cadet Miral Paris's senior cruise. Which ship did they attack?",
+        "answer": "U.S.S. Pike"
+    },
+    {
+        "volume": 23,
+        "chapter": 3,
+        "question": "To which race may the Lorians be related?",
+        "answer": "Xindi"
+    },
+    {
+        "volume": 23,
+        "chapter": 4,
+        "question": "To where did Jean-Luc Picard retire?",
+        "answer": "France"
+    },
+    {
+        "volume": 23,
+        "chapter": 5,
+        "question": "Who was the leader of the True Way in 2402?",
+        "answer": "Gul Madred"
+    },
+    {
+        "volume": 23,
+        "chapter": 6,
+        "question": "Who arrived to support general Velal after he rebelled against praetor Taris?",
+        "answer": "Sela"
+    },
+    {
+        "volume": 24,
+        "chapter": 1,
+        "question": "What did the Klingons destory to allow them to land on the Gorn Homeworld?",
+        "answer": "Planetary power relay"
+    },
+    {
+        "volume": 24,
+        "chapter": 2,
+        "question": "Which general was in charge of the Klingon force that invaded the Gorn homeworld?",
+        "answer": "General Klag"
+    },
+    {
+        "volume": 24,
+        "chapter": 3,
+        "question": "Why did the Klingons execute the Gorn prime minister and head of military intelligence?",
+        "answer": "They were Undine in disguise"
+    },
+    {
+        "volume": 24,
+        "chapter": 4,
+        "question": "Who did J'mpok give a non-voting seat on the High Council in 2403?",
+        "answer": "Slathis"
+    },
+    {
+        "volume": 24,
+        "chapter": 5,
+        "question": "What is the name of emperor Kahless's ship?",
+        "answer": "I.K.S. Batlh"
+    },
+    {
+        "volume": 24,
+        "chapter": 6,
+        "question": "Who captured praetor Taris after the revolt in 2403?",
+        "answer": "No one"
+    },
+    {
+        "volume": 24,
+        "chapter": 7,
+        "question": "Who was named leader of the Romulan fleet after the revolt in 2403?",
+        "answer": "General Velal"
+    },
+    {
+        "volume": 25,
+        "chapter": 1,
+        "question": "What did Starfleet open more of in 2404?",
+        "answer": "Transwarp hubs"
+    },
+    {
+        "volume": 25,
+        "chapter": 2,
+        "question": "What did the Soong foundation want Starfleet to disclose in 2404?",
+        "answer": "Location and condition of all holograms"
+    },
+    {
+        "volume": 25,
+        "chapter": 3,
+        "question": "How long did J'mpok give the Federation to remove its citizens from the Hromi cluster?",
+        "answer": "Three months"
+    },
+    {
+        "volume": 25,
+        "chapter": 4,
+        "question": "Where did Sela open a memorial in 2404?",
+        "answer": "Remains of the Romulan homeworld"
+    },
+    {
+        "volume": 26,
+        "chapter": 1,
+        "question": "What was the first Federation system attacked by the Klingons in 2405?",
+        "answer": "Korvat"
+    },
+    {
+        "volume": 26,
+        "chapter": 2,
+        "question": "What ship was damaged defending Korvat?",
+        "answer": "U.S.S. Montgomery Scott"
+    },
+    {
+        "volume": 26,
+        "chapter": 3,
+        "question": "Who signed a non-aggression pact with the Klingon Empire in 2405?",
+        "answer": "The Nausicaans"
+    },
+    {
+        "volume": 26,
+        "chapter": 4,
+        "question": "What did the Ferengi agree to share with the Federation in 2405?",
+        "answer": "Technology and information"
+    },
+    {
+        "volume": 26,
+        "chapter": 5,
+        "question": "Who was elected Federation president in 2405?",
+        "answer": "Aennik Okeg"
+    },
+    {
+        "volume": 26,
+        "chapter": 6,
+        "question": "What planet did the Gorn attack in 2405?",
+        "answer": "Sherman's planet"
+    },
+    {
+        "volume": 27,
+        "chapter": 1,
+        "question": "The Klingons attempted to conquer the Archanis Sector once before 2408. In which year did that happen?",
+        "answer": "2372"
+    },
+    {
+        "volume": 27,
+        "chapter": 2,
+        "question": "In 2406, the Federation developed power cells that allowed for the creation of personal shields. Where were the power cells developed?",
+        "answer": "Memory Alpha"
+    },
+    {
+        "volume": 27,
+        "chapter": 3,
+        "question": "What did the Carnegie colony provide for the Federation?",
+        "answer": "Factories and replicator facilities"
+    },
+    {
+        "volume": 27,
+        "chapter": 4,
+        "question": "Who was the head of Starfleet intelligence in 2406?",
+        "answer": "Chakotay"
+    },
+    {
+        "volume": 28,
+        "chapter": 1,
+        "question": "Who rejected the idea of a Federation-Klingon cease fire in 2407?",
+        "answer": "Chancellor J'mpok"
+    },
+    {
+        "volume": 28,
+        "chapter": 2,
+        "question": "In 2407, which species was struck by the virus that devastated the Carnegie colony?",
+        "answer": "Phylosians"
+    },
+    {
+        "volume": 28,
+        "chapter": 3,
+        "question": "What were the Romulans searching for in 2407?",
+        "answer": "Sword of S'task"
+    },
+    {
+        "volume": 28,
+        "chapter": 4,
+        "question": "Who sought an alliance with the Klingon Empire in 2407?",
+        "answer": "Letheans"
+    },
+    {
+        "volume": 29,
+        "chapter": 1,
+        "question": "Who is the mayor of Pike city in 2408?",
+        "answer": "Jae Aaron"
+    },
+    {
+        "volume": 29,
+        "chapter": 2,
+        "question": "Who became the Romulan praetor after Sela was crowned empress?",
+        "answer": "No one"
+    },
+    {
+        "volume": 29,
+        "chapter": 3,
+        "question": "What did Sela do at her coronation?",
+        "answer": "Took a blood oath to uphold the empire"
+    },
+    {
+        "volume": 29,
+        "chapter": 4,
+        "question": "Where did Starfleet send the U.S.S. Enterprise-E in 2408?",
+        "answer": "Starbase 236"
+    }
+]
