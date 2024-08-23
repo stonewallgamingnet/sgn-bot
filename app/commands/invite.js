@@ -13,7 +13,6 @@ module.exports = {
         .setDefaultMemberPermissions(PermissionFlagsBits.Connect),
     async execute(interaction) {
         const channel = interaction.member.voice.channel;
-        const channelIds = process.env.TEAM_UP_CHANNEL_IDS.split(',');
 
         if(!channel) {
             interaction.reply({content: 'You must be in a team channel to use this command', ephemeral: true});
