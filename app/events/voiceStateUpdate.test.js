@@ -1,6 +1,7 @@
 import { it, describe, expect, afterAll, beforeAll, afterEach, only, vi } from 'vitest';
 import MockDiscord from '../../tests/mockDiscord';
 import voiceStateUpdate from './voiceStateUpdate';
+import { PermissionsBitField } from 'discord.js';
 
 
 // previous code that i removed and added to mockDiscord, here in case that ever causes a problem
@@ -38,6 +39,10 @@ it('updates channel name when someone joins', async () => {
     const mockDiscord = new MockDiscord(options);
     const voiceState = mockDiscord.getVoiceState();
     process.env.TEAM_UP_CHANNEL_IDS = mockDiscord.getVoiceChannel().id;
+
+    mockDiscord.getVoiceChannel().permissionsFor = vi.fn().mockImplementation(() => {
+        return new PermissionsBitField().add('Connect');
+    });
     
     const setNameSpy = vi.spyOn(mockDiscord.getCategory(), 'setName').mockResolvedValue(mockDiscord.getCategory());
 
@@ -65,6 +70,10 @@ it('updates channel name when someone joins', async () => {
     const mockDiscord = new MockDiscord(options);
     const voiceState = mockDiscord.getVoiceState();
     process.env.TEAM_UP_CHANNEL_IDS = mockDiscord.getVoiceChannel().id;
+
+    mockDiscord.getVoiceChannel().permissionsFor = vi.fn().mockImplementation(() => {
+        return new PermissionsBitField().add('Connect');
+    });
     
     const setNameSpy = vi.spyOn(mockDiscord.getCategory(), 'setName').mockResolvedValue(mockDiscord.getCategory());
 
@@ -85,7 +94,7 @@ it('doesnt update channel name when someone joins if no game', async () => {
     const mockDiscord = new MockDiscord(options);
     const voiceState = mockDiscord.getVoiceState();
     process.env.TEAM_UP_CHANNEL_IDS = mockDiscord.getVoiceChannel().id;
-    
+  
     const setNameSpy = vi.spyOn(mockDiscord.getCategory(), 'setName').mockResolvedValue(mockDiscord.getCategory());
 
     await voiceStateUpdate.execute({}, voiceState);
@@ -107,6 +116,10 @@ it('updates channel name if no one is left in the channel', async () => {
     // we have to remove the voice state from the cache so discord thinks no one is in the channel
     mockDiscord.getGuild().voiceStates.cache.delete(mockDiscord.getVoiceState().id);
 
+    mockDiscord.getVoiceChannel().permissionsFor = vi.fn().mockImplementation(() => {
+        return new PermissionsBitField().add('Connect');
+    });
+
     const setNameSpy = vi.spyOn(mockDiscord.getCategory(), 'setName').mockResolvedValue(mockDiscord.getCategory());
 
     await voiceStateUpdate.execute(voiceState, {});
@@ -115,7 +128,7 @@ it('updates channel name if no one is left in the channel', async () => {
     expect(setNameSpy).toBeCalledWith(options.category.name.replace('Test Game', 'EMPTY'));
 });
 
-it('doesnt update channel name if someone is left in the channel', async () => {
+it("doesn't update channel name if someone is left in the channel", async () => {
     const options = { 
         presence: {},
         category: {

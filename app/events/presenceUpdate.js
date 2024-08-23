@@ -3,11 +3,13 @@ const DiscordUser = require('../models/DiscordUser');
 
 module.exports = {
     name: Events.PresenceUpdate,
-    async execute(oldPresence, newPresence) {
-        // const discordUser = await DiscordUser.findByUserId(newPresence.userId);
+    async execute(oldPresence, newPresence) {     
+        const discordUser = await DiscordUser.findOrAddNew(newPresence.member);
 
-        // discordUser.data.presence = newPresence.status;
+        if(!discordUser) { return; }
 
-        // discordUser.save();
+        discordUser.data.presence = newPresence.status;
+
+        discordUser.save();
     }
 }

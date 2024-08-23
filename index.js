@@ -7,6 +7,7 @@ const path = require('node:path');
 const { Collection, Events } = require('discord.js');
 
 client.commands = new Collection();
+client.modals = new Collection();
 
 const commandsPath = path.join(__dirname, 'app', 'commands');
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js') && !file.includes('test'));
@@ -34,3 +35,13 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+
+// const modalsPath = path.join(__dirname, 'app', 'modals');
+// const modalFiles = fs.readdirSync(modalsPath).filter(file => file.endsWith('.js') && !file.includes('test'));
+
+// for ( const file of modalFiles) {
+// 	const filePath = path.join(modalsPath, file);
+// 	const modal = require(filePath);
+
+// 	client.modals.set(modal.name, modal);
+// }
