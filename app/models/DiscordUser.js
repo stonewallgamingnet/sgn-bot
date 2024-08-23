@@ -70,11 +70,16 @@ class DiscordUser {
     }
     
     static async findByUserId(userId) {
+        let user;
         const sql = "SELECT * FROM " + DiscordUser.tableName + " WHERE user_id = ?";
     
-        const [user,] = await DiscordUser.db.execute(sql, [userId]);
+        try {
+            [user,] = await DiscordUser.db.execute(sql, [userId]);
+        } catch(e) {
+            console.log("Failed to find user by Id");
+        }
 
-        return user.length ? new DiscordUser({...user[0]}) : null;
+        return (user && user.length) ? new DiscordUser({...user[0]}) : null;
     }
 
     async save() {
@@ -87,10 +92,15 @@ class DiscordUser {
         sql += " VALUES (" + new Array(Object.keys(this.data).length).fill('?').join(', ') + ")";
     
         const values = Object.values(this.data);
-        const [result,] = await DiscordUser.db.execute(sql, values);
-        this.id = result.insertId;
+        try {
+            const [result,] = await DiscordUser.db.execute(sql, values);
+            this.id = result.insertId;
+            return result;
+        } catch(e) {
+            console.error('Failed to insert new user');
+            return false;
+        }
     
-        return result;
     }
     
     async update() {
